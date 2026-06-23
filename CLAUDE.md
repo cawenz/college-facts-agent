@@ -1,156 +1,180 @@
 # College Facts Agent
 
-A natural-language agent that answers questions about U.S. colleges and
-universities from a curated facts catalog. Single user → AI conversational
-front-end → Postgres `facts` + `variables` + `schools` catalog → IPEDS,
-Academic Insights, Common Data Set, College Scorecard, EADA, US News,
-Washington Monthly, Forbes.
+A tool-calling agent that answers factual questions about U.S. colleges and
+universities from a local database built from IPEDS, College Scorecard, and the
+US News (Academic Insights / CDS-aligned) API. Inference runs on a hosted model
+API; the data stays local. Built and hosted by a solo maintainer on a Linux
+home server (Lenovo ThinkCentre M720q), for personal use plus a few colleagues.
 
-## Architecture
-
-Three stages along language/data seams:
+## Data flow
 
 ```
-data/  ──►  R ETL  ──►  output/*.csv  ──►  load_to_postgres.py  ──►  Postgres  ──►  agent/  ──►  user
-(raw)       (etl/)      (long facts +       (load/)                  (catalog)     (FastAPI)
-                         metric catalog)
+R ETL (etl/) ──> CSVs (output/) ──> loader (load/) ──> Postgres ──> FastAPI agent (agent/) ──> Haiku | Gemini
 ```
 
-- **R does ETL** because the IPEDS bundles (in `data/IPEDS*.Rda`) are most
-  easily worked with the `jbryer/ipeds` package, and because the existing
-  pipelines (carried over from `peer_schools`) are mature.
-- **CSVs are the hand-off.** Each module writes a long `<mod>_facts.csv`
-  (`unitid, year, metric, value, var_type`) plus a `<mod>_variables.csv`
-  catalog. The CSV layer is intentional — it lets us inspect, audit, and
-  regenerate without round-tripping through Postgres.
-- **Postgres is the queryable store.** Four tables (see `load/schema.sql`).
-  All `*_facts.csv` union into one `facts` table; all `*_variables.csv` stack
-  into one `variables` catalog.
-- **Python agent** queries Postgres via a small, generic tool surface
-  (`search_metrics`, `get_fact`, `list_schools`, `get_ranking`). Tools are
-  driven by the `variables` catalog — the model picks metrics by description,
-  not from a hardcoded list.
+Only the user's question and the specific tool *results* the agent returns ever
+leave the box. The raw dataset never does.
 
-## Directory map
+## Repo map
 
-```
-etl/                       # R pipeline
-  schools_pipeline.R       # backbone: builds schools directory, joins rankings,
-                           # writes value_labels.csv. Contains the shared
-                           # helpers `get_table()`, `ai_get()`, `.out_path()`.
-  build_rda.R              # one-shot: downloads IPEDS Access databases and
-                           # writes data/IPEDS*.Rda. Needs mdbtools + the pinned
-                           # jbryer/ipeds package. You only run this when
-                           # IPEDS releases a new vintage.
-  run_all.R                # sources backbone + every module in order.
-  modules/                 # one R file per facts theme. Each defines a
-                           # `run_<mod>_module()` that writes 2 CSVs to output/.
-    admissions_module_pipeline.R   # admissions + CDS detail (Academic Insights)
-    aid_module_pipeline.R          # SFA + net price + discount rate
-    athletics_module_pipeline.R    # EADA + athletics conference (Python scraper)
-    enrollment_module_pipeline.R   # EF + DRVEF + composition
-    finance_module_pipeline.R      # finance + resources (incl. faculty, salaries)
-    outcomes_module_pipeline.R     # GR + OM + Scorecard earnings + Carnegie + programs
-  scrapers/                # Python sidecars - feed inputs that R then joins
-    eada_conferences.py    # athletics conference assignments (not in EADA)
-    forbes_rankings.py     # Forbes Top Colleges 2025 ranking ingestion
+- `etl/schools_pipeline.R` — backbone. Builds `schools.csv` (one row per
+  institution, decoded labels) and `value_labels.csv` (code→label). Also defines
+  the shared helpers (`get_table`, `ai_get`, `scorecard_get`, `.out_path`) that
+  every module sources.
+- `etl/accdb_to_rda.R` — **primary** data-layer script. Converts NCES Access DBs
+  you download by hand into the IPEDS `.Rda` bundles in `data/`. See "Data
+  provenance" below.
+- `etl/build_rda.R` — convenience fallback that auto-downloads + converts via the
+  (unmaintained) `jbryer/ipeds` package. Prefer `accdb_to_rda.R`.
+- `etl/modules/*_pipeline.R` — one module per domain (admissions, aid,
+  athletics, enrollment, finance, outcomes). Each reads `schools.csv` + IPEDS
+  `.Rda` + APIs and writes `{module}_facts.csv` and `{module}_variables.csv`.
+- `data/` — raw inputs (IPEDS `.Rda` bundles, Carnegie xlsx). Repo root.
+- `output/` — built CSVs. Repo root.
+- `load/` — (to write) `schema.sql` + loader that lands the CSVs in Postgres.
+- `agent/` — FastAPI agent. `app.py` (loop + `/chat` + auth), `tools.py`
+  (tool layer), `config.py` (model switch).
+- `docs/`, `tests/` — notes and the eval harness.
 
-data/                      # raw inputs - SELF-CONTAINED. Move with the repo.
-  IPEDS2010-11.Rda ... IPEDS2024-25.Rda
-  2025-Public-Data-File.xlsx    # US News - LICENSED, see docs/data_sources.md
-  washington_monthly_2025.xlsx  # WaMo rankings
-  forbes_top_colleges_2025.csv  # Forbes (cleaned)
-  forbes_page_2025.html         # Forbes (raw HTML cached)
-  eada_2024_25/                 # EADA athletics dump
-  eada_conferences.csv          # output of scrapers/eada_conferences.py
-  variables_descriptions.csv    # plain-English definitions, used in the
-                                # agent's tool descriptions
-  downloaded/                   # raw Access-DB cache from build_rda.R
-                                # (gitignored)
+## Commands
 
-output/                    # built CSVs — gitignored; regenerated by ETL.
-  schools.csv, value_labels.csv
-  adm_facts.csv,  adm_variables.csv
-  aid_facts.csv,  aid_variables.csv
-  ath_facts.csv,  ath_variables.csv
-  enr_facts.csv,  enr_variables.csv
-  fin_facts.csv,  fin_variables.csv
-  out_facts.csv,  out_variables.csv
+Run R from the repo root (path helpers expect `data/` and `output/` there):
 
-load/                      # Postgres bridge
-  schema.sql               # facts, variables, schools, value_labels tables
-  load_to_postgres.py      # idempotent: truncate + reload + integrity checks
+```bash
+# Produce the IPEDS .Rda bundles (skip if data/IPEDS*.Rda already present).
+# Primary: download Access DBs into data/accdb/ by hand, then convert:
+Rscript etl/accdb_to_rda.R
+# Fallback (auto-download via jbryer/ipeds): Rscript etl/build_rda.R
+# See "Data provenance".
 
-agent/                     # FastAPI + litellm + psycopg
-  app.py     config.py     tools.py     requirements.txt    README.md
+# Backbone (writes output/schools.csv, output/value_labels.csv)
+Rscript -e 'source("etl/schools_pipeline.R"); build_schools()'
 
-docs/
-  data_sources.md          # provenance, year conventions, licensing
-  codebook_ingestion.md    # how to add a new IPEDS variable to the catalog
-  reference/               # any legacy / discarded design docs
-  future/                  # TODO docs for the next iteration
+# A module — must source the backbone first for shared helpers
+Rscript -e 'source("etl/schools_pipeline.R"); source("etl/modules/admissions_module_pipeline.R"); run_admissions_module()'
 
-tests/
-  eval_questions.yaml      # question / expected-source pairs
+# Everything (once etl/run_all.R is written)
+Rscript etl/run_all.R
+
+# Load CSVs into Postgres (once load/ is written)
+psql "$DB_DSN" -f load/schema.sql
+python load/load_to_postgres.py
+
+# Run the agent
+uvicorn agent.app:app --host 127.0.0.1 --port 8000
 ```
 
-## Data provenance + licensing
+## Environment variables
 
-Read `docs/data_sources.md` before touching the ETL. Key constraints:
+`ACADEMIC_INSIGHTS_API_KEY` (US News), `SCORECARD_API_KEY`, `DB_DSN`,
+`AGENT_MODEL` (`haiku`|`gemini`), `ANTHROPIC_API_KEY` or `GEMINI_API_KEY`,
+`API_TOKENS` (comma-separated bearer tokens for testers). Names live in
+`.env.example`; never commit real values.
 
-- **US News data is licensed.** `2025-Public-Data-File.xlsx` is the cleaned
-  data file from US News' annual best-colleges public download. `output/`
-  is gitignored partly because derived facts from this file would otherwise
-  be redistributed.
-- **Academic Insights is licensed.** Calls go through `ai_get()` in
-  `schools_pipeline.R`. The dataset id and metric ids are pinned in each
-  module's `*_CONFIG` list. The agent should never expose raw AI responses
-  outside of derived facts.
-- **IPEDS and Scorecard are public domain.** Safe to surface natively.
-- **EADA is public.** Conference assignments are NOT in EADA's CSV - they
-  come from the Python scraper in `etl/scrapers/`.
+## Architecture principles (durable — keep these true)
 
-## Year conventions
+- **Decouple the model.** The agent talks to one OpenAI-compatible interface via
+  LiteLLM. Haiku vs Gemini is the `AGENT_MODEL` env var, not a code change.
+- **Catalog as contract.** The `*_variables.csv` catalog is the single source of
+  truth that BOTH the ETL and the agent read. Adding a variable = extraction
+  logic + one catalog row; it then becomes answerable by the agent automatically,
+  carrying its `source`, `format`, and `coverage_note`. Do not hardcode field
+  lists in the agent — read the catalog.
+- **Relational, not RAG.** Structured data is served by parameterized SQL through
+  tools, never vector retrieval. The model never writes SQL — it picks a tool and
+  arguments; field names are validated against the catalog before any query runs.
+- **Long facts format.** Facts are `(unitid, year, metric, value)`. New metrics
+  never require a schema migration.
+- **Grounding.** Every figure the agent reports must carry its source and data
+  year from the tool result. If a tool returns null, say the data isn't
+  available — never estimate. Surface `coverage_note` caveats (e.g. "based on the
+  ~45% of schools reporting to the CDS") instead of overclaiming.
 
-IPEDS years in this project mean the **fall cohort year**:
-- `2024` = fall 2024 entering class = IPEDS 2024-25 collection cycle
-- Admissions data (ADM, CDS) is available ~1 year after the cohort
-- Cost data (IC_AY) lags admissions by ~6 months
-- Finance data lags by ~1 academic year (FY2023 reports in 2024-25 cycle)
+## Conventions & gotchas
 
-The `facts.year` column always stores this fall cohort year.
+- **Year naming.** IPEDS uses fall-year (HD2024 = 2024-25). The US News/Academic
+  Insights API lags by 2 years: AI year Y = IPEDS year Y−2. Facts tables use
+  IPEDS naming throughout; `ipeds_to_ai_year()` / `ai_to_ipeds_year()` translate.
+- **Variable churn across years is handled in code, keep it that way.** ADM
+  totals (APPLCN/ADMSSN/ENRLT) became gender breakouts in 2024+; SAT 50th
+  percentile is absent in 2020-21. Modules try the direct column, then fall back
+  (sum components / 25-75 midpoint / DRVADM precomputed). Preserve this pattern
+  when adding variables.
+- **Categorical codes are decoded via `value_labels.csv`**, not inline maps.
+- **Universe scope.** `keep_sectors = c(1, 2)` limits everything to public and
+  private-nonprofit institutions. The agent silently inherits this — it will have
+  nothing to say about community colleges or for-profits until the scope widens.
+- **IPEDS structural churn.** Components move between years (e.g. net price moved
+  from SFA to the new Cost (CST) component in 2024-25). The per-year extraction
+  logic absorbs this; don't assume a metric lives in the same file every year.
 
-## Next steps
+## Data provenance — the `.Rda` bundles (critical)
 
-1. **Loader** — `load/schema.sql` + `load/load_to_postgres.py` are stubbed.
-   Run them once end-to-end against a local Postgres, fix any column drift,
-   then add `tests/load_smoke_test.py`.
-2. **Tools rework** — `agent/tools.py` currently has stubs for the four
-   generic tools; flesh them out to wrap psycopg cleanly and emit OpenAI/
-   litellm-compatible JSON schemas.
-3. **Agent loop** — replace the `/chat` stub in `app.py` with a real model
-   loop. Read `AGENT_MODEL` from env and route via litellm.
-4. **Eval harness** — start `tests/eval_questions.yaml` from real questions
-   you've asked the peer-schools tool, and write a small runner that asserts
-   the answer cites the right source (`source` field in `variables`).
+The pipeline reads `data/IPEDS{collection}-{yy}.Rda`, each a list named `db` of
+one collection year's survey tables. The pipeline loads them with bare `load()`
+(decoupled at run time), but they are reproducible build artifacts, not
+irreplaceable inputs. Two ways to produce them:
 
-## Where things came from
+**Primary — `etl/accdb_to_rda.R` (self-owned, robust).** You download the
+official Access DB(s) by hand from NCES → Use the Data → Download Access
+Database, drop them in `data/accdb/` (gitignored), and run `Rscript
+etl/accdb_to_rda.R`. It converts each via `Hmisc::mdb.get` (same reader the
+original bundles used), writes the bundles + `data/ipeds_manifest.csv` (md5 +
+build date), and provides `verify_against(new, reference)` to confirm parity
+with an existing bundle before trusting it. No dependency on package download
+logic. Deps: `mdbtools` (`apt install mdbtools`) + `Hmisc`.
 
-This repo descends from `~/Code/peer_schools`, which built and shipped a
-Shiny peer-comparison app on the same R pipelines. Key carry-overs from
-that project:
+**Fallback — `etl/build_rda.R` (convenience).** Auto-downloads + converts via
+`remotes::install_github("jbryer/ipeds@<SHA>")`. Pin the SHA — the package is
+unmaintained (last built ~2023) and pulls from NCES URLs that drift. Handy, but
+the download logic is the fragile part, which is why `accdb_to_rda.R` is primary.
 
-- All six module pipelines (admissions/aid/athletics/enrollment/finance/outcomes)
-- The schools backbone (rankings join logic, value_labels)
-- The IPEDS .Rda bundles (built by `etl/build_rda.R`)
-- The variables descriptions catalog
-- The EADA conference scraper
+Prefer the Final release over Provisional; record which per year, since
+provisional numbers change. If both Access-based paths ever break,
+`stanislavzza/IPEDSR` (duckdb, 2004–present, actively maintained) is the likely
+migration target, but its naming differs so the module extraction would adapt.
 
-What was **deliberately left behind**:
+## Never do
 
-- `peer_pipeline.R` and the clustering/Mahalanobis machinery
-- The Shiny apps (`shiny_app/`, `cohort_app/`)
-- The cohort-builder logic and saved-searches persistence
-- All exploratory clustering work (`explore_clustvarsel.R`, etc.)
+- **Commit policy.** The IPEDS `.Rda` bundles ARE committed, via **git-lfs**
+  (public domain; lfs keeps history clean). Never commit `.env`, API keys,
+  `output/` (build artifacts that contain licensed US News–derived values), or
+  the `data/accdb/` raw download cache. The US News / Academic Insights data is
+  **licensed** — it must never be committed or pushed.
+- **Never send the raw dataset to the model API.** Only selected tool results go
+  out. Use the `source` field to gate `cds_ai`-sourced values if needed.
+- **Never let the model write SQL** or reach fields outside the catalog.
+- **Never reproduce US News content** beyond what the license permits.
 
-The agent's job is to answer fact questions, not to do peer-comparison math.
+## Current state
+
+- **Done:** mature R ETL, 7 modules, 50+ variables, `value_labels.csv`,
+  per-metric coverage reporting, year-aware extraction.
+- **Scaffolded (needs rework):** the Python agent (`app.py`, `tools.py`,
+  `schema.sql`). `tools.py` currently uses a hardcoded `FIELD_REGISTRY` — this
+  must be replaced by reading the `variables` catalog from Postgres.
+- **Not yet built:** the CSV→Postgres loader; `etl/run_all.R`; the codebook
+  ingestion path; the auth-for-colleagues hardening; the eval harness.
+
+## Next steps (priority order)
+
+1. Write `load/schema.sql` + `load/load_to_postgres.py`: union `*_facts.csv` into
+   one `facts` table, stack `*_variables.csv` into one `variables` catalog, plus
+   `schools` and `value_labels`. Four tables.
+2. Rework `agent/tools.py` to be **catalog-driven** over those tables (drop the
+   hardcoded registry; validate requested metrics against the `variables` table).
+3. Write `etl/run_all.R` and fix the `source("R/...")` path references to `etl/`.
+4. Codebook ingestion (`docs/codebook_ingestion.md`): a repeatable path to add
+   IPEDS variables — extraction + a `variables` catalog row with correct metadata.
+5. Eval harness (`tests/eval_questions.yaml`): question/expected-source pairs run
+   on every change, to catch a number that lost its year or source.
+6. Decide whether to widen `keep_sectors` for a general-purpose agent.
+
+## Open decisions
+
+- Universe scope (sectors 1,2 only vs. all institutions).
+- Whether `cds_ai` values get special handling before leaving the box for the API.
+- Local inference later: revisit Ollama/vLLM if/when the RTX 3090 build happens;
+  the LiteLLM decoupling means that's a config swap, not a rewrite.
+
+See @README.md for the human quickstart and @agent/README.md for agent details.

@@ -1,70 +1,64 @@
 # =============================================================================
-# accdb_to_rda  -  Windows-native conversion of an IPEDS .accdb to .Rda
-# Holy Cross peer-comparison project
+# build_rda.R — convenience fallback that auto-downloads NCES IPEDS Access DBs
+#               and converts them to data/IPEDS{collection}-{yy}.Rda bundles via
+#               the (unmaintained) jbryer/ipeds R package.
 #
-# WHEN YOU NEED THIS
-#   The repo ships pre-built .Rda files for the years in the analytic panel.
-#   When a new IPEDS collection is released and you want to add it, this
-#   utility converts the downloaded .accdb to the .Rda format the pipeline
-#   loads. Run once per new year, then commit the .Rda to the repo.
+# PREFER etl/accdb_to_rda.R. Use this only if you don't want to download the
+# Access DBs by hand. The package is the fragile link — NCES URLs and table
+# layouts have drifted since the last release. Pin a known-good SHA, and run
+# verify_against() (in accdb_to_rda.R) on the result before trusting it.
 #
-# REQUIREMENTS
-#   - The Microsoft Access ODBC driver (ships with Office, or install the
-#     "Microsoft Access Database Engine 2016 Redistributable" - free).
-#   - install.packages(c("odbc", "DBI"))
+# ── DEPENDENCIES ────────────────────────────────────────────────────────────
+#   System:  mdbtools  →  apt install mdbtools
+#   R:       remotes, Hmisc, ipeds (jbryer/ipeds @ pinned SHA)
 #
-# OUTPUT NAMING (matches the format the pipeline expects in data/)
-#   IPEDS{prev_year}-{yy}.Rda   e.g.  IPEDS2025-26.Rda for collection year 2025
+# ── USAGE ───────────────────────────────────────────────────────────────────
+#   Rscript etl/build_rda.R                  # builds every supported year
+#   Rscript -e 'source("etl/build_rda.R"); build_rda_year(2024)'   # one year
 # =============================================================================
 
-suppressPackageStartupMessages({
-  library(odbc); library(DBI)
-})
+# Pin a SHA that you've verified produces the same bundles as accdb_to_rda.R.
+# Update only after re-running verify_against() against a known-good bundle.
+IPEDS_PKG_SHA <- "PIN_ME"     # e.g. "abc1234..."
 
-accdb_to_rda <- function(accdb_path, rda_path, verbose = TRUE) {
-  if (!file.exists(accdb_path)) stop("Not found: ", accdb_path)
-  accdb_abs <- normalizePath(accdb_path, winslash = "\\", mustWork = TRUE)
-  conn_str <- sprintf(
-    "Driver={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=%s;", accdb_abs
-  )
-  
-  if (verbose) message("Opening: ", accdb_abs)
-  con <- DBI::dbConnect(odbc::odbc(), .connection_string = conn_str)
-  on.exit(DBI::dbDisconnect(con), add = TRUE)
-  
-  tables <- DBI::dbListTables(con)
-  tables <- tables[!grepl("^MSys", tables, ignore.case = TRUE)]
-  if (!length(tables)) stop("No user tables found in ", accdb_abs)
-  if (verbose) message(sprintf("Found %d tables. Reading...", length(tables)))
-  
-  db <- vector("list", length(tables))
-  names(db) <- tables
-  for (i in seq_along(tables)) {
-    if (verbose) message(sprintf("  [%2d/%2d] %s", i, length(tables), tables[i]))
-    db[[i]] <- tryCatch(
-      DBI::dbGetQuery(con, sprintf("SELECT * FROM [%s]", tables[i])),
-      error = function(e) {
-        warning(sprintf("Could not read table '%s': %s",
-                        tables[i], conditionMessage(e)))
-        NULL })
-  }
-  db <- db[!vapply(db, is.null, logical(1))]
-  
-  if (verbose) message(sprintf("Saving %d tables to %s", length(db), rda_path))
-  save(db, file = rda_path)
-  invisible(db)
+# Which collection years this script supports producing.
+SUPPORTED_YEARS <- 2010:2024
+
+install_ipeds_pkg <- function() {
+  if (requireNamespace("ipeds", quietly = TRUE)) return(invisible())
+  if (!requireNamespace("remotes", quietly = TRUE))
+    install.packages("remotes")
+  if (IPEDS_PKG_SHA == "PIN_ME")
+    stop("Pin IPEDS_PKG_SHA before running build_rda.R — see file header.")
+  remotes::install_github(paste0("jbryer/ipeds@", IPEDS_PKG_SHA))
 }
 
-# -----------------------------------------------------------------------------
-# Example - convert a new collection year, then commit the resulting .Rda:
-#
-#   setwd("path/to/hc-peer")
-#   source("R/accdb_to_rda.R")
-#
-#   # Adjust these for the year you're adding:
-#   accdb <- "C:/Users/me/Downloads/IPEDS202526.accdb"
-#   rda   <- "data/IPEDS2025-26.Rda"
-#
-#   db <- accdb_to_rda(accdb, rda)
-#   # then: git add data/IPEDS2025-26.Rda && git commit -m "Add 2025-26 IPEDS"
-# -----------------------------------------------------------------------------
+# Build one bundle (collection year = fall-year of the cycle).
+# Writes data/IPEDS{cy}-{yy}.Rda where the object is a list named `db`.
+build_rda_year <- function(collection_year, out_dir = "data") {
+  install_ipeds_pkg()
+  stopifnot(collection_year %in% SUPPORTED_YEARS)
+
+  ending <- collection_year + 1L
+  yy     <- sprintf("%02d", ending %% 100)
+  out    <- file.path(out_dir, sprintf("IPEDS%d-%s.Rda", collection_year, yy))
+
+  message(sprintf("Downloading + converting %d-%s ...", collection_year, yy))
+
+  # The package's download helper drops Access DBs under data/downloaded/ and
+  # mdb.get-converts them. Exact API varies by jbryer/ipeds SHA — if this errors,
+  # check the package's README at the pinned SHA.
+  db <- ipeds::load_ipeds(year = collection_year, cache_dir = "data/downloaded")
+  save(db, file = out)
+  message(sprintf("  wrote %s (%d tables)", out, length(db)))
+  invisible(out)
+}
+
+build_all <- function() {
+  for (cy in SUPPORTED_YEARS) {
+    tryCatch(build_rda_year(cy),
+             error = function(e) warning(sprintf("year %d failed: %s", cy, conditionMessage(e))))
+  }
+}
+
+if (sys.nframe() == 0) build_all()
