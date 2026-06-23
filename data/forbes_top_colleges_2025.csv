@@ -1,0 +1,501 @@
+rank,name,state,type
+1,Massachusetts Institute of Technology,MA,Private not-for-profit
+2,Columbia University,NY,Private not-for-profit
+3,Princeton University,NJ,Private not-for-profit
+4,Stanford University,CA,Private not-for-profit
+5,"University of California, Berkeley",CA,Public
+6,Harvard University,MA,Private not-for-profit
+7,Williams College,MA,Private not-for-profit
+8,Johns Hopkins University,MD,Private not-for-profit
+9,Yale University,CT,Private not-for-profit
+10,University of Pennsylvania,PA,Private not-for-profit
+11,Vanderbilt University,TN,Private not-for-profit
+12,Rice University,TX,Private not-for-profit
+13,University of Chicago,IL,Private not-for-profit
+14,Cornell University,NY,Private not-for-profit
+15,"University of California, Los Angeles",CA,Public
+16,Northwestern University,IL,Private not-for-profit
+17,Dartmouth College,NH,Private not-for-profit
+18,Brown University,RI,Private not-for-profit
+19,Amherst College,MA,Private not-for-profit
+20,"University of California, San Diego",CA,Public
+21,"University of Michigan, Ann Arbor",MI,Public
+22,Duke University,NC,Private not-for-profit
+23,Swarthmore College,PA,Private not-for-profit
+24,California Institute of Technology,CA,Private not-for-profit
+25,Washington University in St. Louis,MO,Private not-for-profit
+26,Claremont McKenna College,CA,Private not-for-profit
+27,Emory University,GA,Private not-for-profit
+28,University of Southern California,CA,Private not-for-profit
+29,Wellesley College,MA,Private not-for-profit
+30,University of Florida,FL,Public
+31,"University of California, Irvine",CA,Public
+32,Georgia Institute of Technology,GA,Public
+33,University of Notre Dame,IN,Private not-for-profit
+34,University of Virginia,VA,Public
+35,"University of North Carolina, Chapel Hill",NC,Public
+36,Pomona College,CA,Private not-for-profit
+37,"University of Maryland, College Park",MD,Public
+38,"University of Illinois, Urbana-Champaign",IL,Public
+39,Bowdoin College,ME,Private not-for-profit
+40,Brigham Young University,UT,Private not-for-profit
+41,Georgetown University,DC,Private not-for-profit
+42,"University of California, Santa Barbara",CA,Public
+43,Carnegie Mellon University,PA,Private not-for-profit
+44,"University of California, Davis",CA,Public
+45,Boston University,MA,Private not-for-profit
+46,"University of Texas, Austin",TX,Public
+47,Washington and Lee University,VA,Private not-for-profit
+48,Colgate University,NY,Private not-for-profit
+49,New York University,NY,Private not-for-profit
+50,"University of Washington, Seattle",WA,Public
+51,Wesleyan University,CT,Private not-for-profit
+52,Middlebury College,VT,Private not-for-profit
+53,"University of Wisconsin, Madison",WI,Public
+54,Boston College,MA,Private not-for-profit
+55,"California Polytechnic State University, San Luis Obispo",CA,Public
+56,Haverford College,PA,Private not-for-profit
+57,University of Georgia,GA,Public
+58,Tufts University,MA,Private not-for-profit
+59,Davidson College,NC,Private not-for-profit
+60,William & Mary,VA,Public
+61,"Texas A&M University, College Station",TX,Public
+62,Purdue University,IN,Public
+63,"University of California, Santa Cruz",CA,Public
+64,Lehigh University,PA,Private not-for-profit
+65,Santa Clara University,CA,Private not-for-profit
+66,"North Carolina State University, Raleigh",NC,Public
+67,George Washington University,DC,Private not-for-profit
+68,"Binghamton University, SUNY",NY,Public
+69,University of Rochester,NY,Private not-for-profit
+70,Rutgers University,NJ,Public
+71,Colby College,ME,Private not-for-profit
+72,Florida State University,FL,Public
+73,Hamilton College,NY,Private not-for-profit
+74,College of the Holy Cross,MA,Private not-for-profit
+75,Villanova University,PA,Private not-for-profit
+76,University of Miami (FL),FL,Private not-for-profit
+77,"University of California, Riverside",CA,Public
+78,"University of Minnesota, Twin Cities",MN,Public
+79,Michigan State University,MI,Public
+80,"Stony Brook University, SUNY",NY,Public
+81,Virginia Tech,VA,Public
+82,Trinity University (TX),TX,Private not-for-profit
+83,Ohio State University,OH,Public
+84,Harvey Mudd College,CA,Private not-for-profit
+85,Bucknell University,PA,Private not-for-profit
+86,Clemson University,SC,Public
+87,San Diego State University,CA,Public
+88,Trinity College (CT),CT,Private not-for-profit
+89,Smith College,MA,Private not-for-profit
+90,"CUNY, Baruch College",NY,Public
+91,Lafayette College,PA,Private not-for-profit
+92,University of Richmond,VA,Private not-for-profit
+93,"University of Colorado, Boulder",CO,Public
+94,"Indiana University, Bloomington",IN,Public
+95,Babson College,MA,Private not-for-profit
+96,"University of Oklahoma, Norman",OK,Public
+97,"California State University, Long Beach",CA,Public
+98,Wake Forest University,NC,Private not-for-profit
+99,University of Utah,UT,Public
+100,Bates College,ME,Private not-for-profit
+101,New Jersey Institute of Technology,NJ,Public
+102,"CUNY, Hunter College",NY,Public
+103,Southern Methodist University,TX,Private not-for-profit
+104,Barnard College,NY,Private not-for-profit
+105,University of San Diego,CA,Private not-for-profit
+106,Syracuse University,NY,Private not-for-profit
+107,University of Houston,TX,Public
+108,University of Illinois at Chicago,IL,Public
+109,Dickinson College,PA,Private not-for-profit
+110,Occidental College,CA,Private not-for-profit
+111,"Arizona State University, Tempe",AZ,Public
+112,University of South Florida,FL,Public
+113,Northeastern University,MA,Private not-for-profit
+114,George Mason University,VA,Public
+115,Vassar College,NY,Private not-for-profit
+116,Grinnell College,IA,Private not-for-profit
+117,Brandeis University,MA,Private not-for-profit
+118,"California State University, Fullerton",CA,Public
+119,University of Connecticut,CT,Public
+120,Texas Christian University,TX,Private not-for-profit
+121,James Madison University,VA,Public
+122,Oregon State University,OR,Public
+123,Pepperdine University,CA,Private not-for-profit
+124,University of Arizona,AZ,Public
+125,San Jose State University,CA,Public
+126,"University of Missouri, Columbia",MO,Public
+127,Colorado School of Mines,CO,Public
+128,Carleton College,MN,Private not-for-profit
+129,Pitzer College,CA,Private not-for-profit
+130,"University of Tennessee, Knoxville",TN,Public
+131,Case Western Reserve University,OH,Private not-for-profit
+132,Stevens Institute of Technology,NJ,Private not-for-profit
+133,Fordham University,NY,Private not-for-profit
+134,"University of Maryland, Baltimore County",MD,Public
+135,Marquette University,WI,Private not-for-profit
+136,American University,DC,Private not-for-profit
+137,Loyola Marymount University,CA,Private not-for-profit
+138,Colorado College,CO,Private not-for-profit
+139,Washington State University,WA,Public
+140,Franklin W Olin College of Engineering,MA,Private not-for-profit
+141,"University of Texas, Dallas",TX,Public
+142,Kenyon College,OH,Private not-for-profit
+143,"CUNY, Queens College",NY,Public
+144,"California State Polytechnic University, Pomona",CA,Public
+145,Connecticut College,CT,Private not-for-profit
+146,Iowa State University,IA,Public
+147,Elon University,NC,Private not-for-profit
+148,Cooper Union,NY,Private not-for-profit
+149,University of Delaware,DE,Public
+150,Florida International University,FL,Public
+151,Tulane University,LA,Private not-for-profit
+152,"University of Massachusetts, Amherst",MA,Public
+153,Kalamazoo College,MI,Private not-for-profit
+154,University at Buffalo,NY,Public
+155,Scripps College,CA,Private not-for-profit
+156,University of Central Florida,FL,Public
+157,Louisiana State University,LA,Public
+158,Franklin and Marshall College,PA,Private not-for-profit
+159,Wheaton College (IL),IL,Private not-for-profit
+160,Worcester Polytechnic Institute,MA,Private not-for-profit
+161,Texas Tech University,TX,Public
+162,University of Dayton,OH,Private not-for-profit
+163,Auburn University,AL,Public
+164,Union College (NY),NY,Private not-for-profit
+165,University of Kansas,KS,Public
+166,"CUNY, The City College of New York",NY,Public
+167,Bryn Mawr College,PA,Private not-for-profit
+168,Creighton University,NE,Private not-for-profit
+169,University of Denver,CO,Private not-for-profit
+170,Rensselaer Polytechnic Institute,NY,Private not-for-profit
+171,Illinois Institute of Technology,IL,Private not-for-profit
+172,University of San Francisco,CA,Private not-for-profit
+173,DePauw University,IN,Private not-for-profit
+174,Skidmore College,NY,Private not-for-profit
+175,University of Arkansas,AR,Public
+176,University of Pittsburgh,PA,Public
+177,Gettysburg College,PA,Private not-for-profit
+178,Rhodes College,TN,Private not-for-profit
+179,University of Washington Bothell,WA,Public
+180,Sewanee—University of the South,TN,Private not-for-profit
+181,University of Nevada-Reno,NV,Public
+182,University of Portland,OR,Private not-for-profit
+183,"CUNY, Brooklyn College",NY,Public
+184,St. Lawrence University,NY,Private not-for-profit
+185,Drexel University,PA,Private not-for-profit
+186,San Francisco State University,CA,Public
+187,University of Oregon,OR,Public
+188,Baylor University,TX,Private not-for-profit
+189,St. Olaf College,MN,Private not-for-profit
+190,University of California-Merced,CA,Public
+191,College of New Jersey,NJ,Public
+192,"California State University, Fresno",CA,Public
+193,University of Vermont,VT,Public
+194,University of Saint Thomas (MN),MN,Private not-for-profit
+195,Rochester Institute of Technology,NY,Private not-for-profit
+196,Towson University,MD,Public
+197,University of South Carolina,SC,Public
+198,University of the Pacific (CA),CA,Private not-for-profit
+199,Oberlin College,OH,Private not-for-profit
+200,Oklahoma State University,OK,Public
+201,Bentley University,MA,Private not-for-profit
+202,Wofford College,SC,Private not-for-profit
+203,Saint Louis University,MO,Private not-for-profit
+204,Whitman College,WA,Private not-for-profit
+205,University of Tulsa,OK,Private not-for-profit
+206,Seton Hall University,NJ,Private not-for-profit
+207,Macalester College,MN,Private not-for-profit
+208,DePaul University,IL,Private not-for-profit
+209,Wabash College,IN,Private not-for-profit
+210,"University at Albany, SUNY",NY,Public
+211,Furman University,SC,Private not-for-profit
+212,"Rutgers University, Newark",NJ,Public
+213,Kansas State University,KS,Public
+214,Florida Atlantic University,FL,Public
+215,Rose-Hulman Institute of Technology,IN,Private not-for-profit
+216,University of Redlands,CA,Private not-for-profit
+217,The Citadel,SC,Public
+218,Kettering University,MI,Private not-for-profit
+219,"University of Hawaii, Manoa",HI,Public
+220,"University of Nebraska, Lincoln",NE,Public
+221,Sonoma State University,CA,Public
+222,"California State University, Chico",CA,Public
+223,Ramapo College of New Jersey,NJ,Public
+224,"SUNY, Geneseo",NY,Public
+225,University of Mississippi,MS,Public
+226,Reed College,OR,Private not-for-profit
+227,SUNY Maritime College,NY,Public
+228,New Mexico Institute of Mining and Technology,NM,Public
+229,Rhode Island School of Design,RI,Private not-for-profit
+230,Yeshiva University,NY,Private not-for-profit
+231,"Embry-Riddle Aeronautical University, Daytona Beach",FL,Private not-for-profit
+232,Temple University,PA,Public
+233,University of Kentucky,KY,Public
+234,Centre College,KY,Private not-for-profit
+235,Missouri University of Science and Technology,MO,Public
+236,"University of North Carolina, Charlotte",NC,Public
+237,Mount Holyoke College,MA,Private not-for-profit
+238,University of North Texas,TX,Public
+239,Miami University (OH),OH,Public
+240,Seattle University,WA,Private not-for-profit
+241,"CUNY, John Jay College of Criminal Justice",NY,Public
+242,Loyola University Chicago,IL,Private not-for-profit
+243,"Colorado State University, Fort Collins",CO,Public
+244,University of Wyoming,WY,Public
+245,Saint John's University,MN,Private not-for-profit
+246,"University of Texas, Arlington",TX,Public
+246,"University of Washington, Tacoma Campus",WA,Public
+248,Hobart and William Smith Colleges,NY,Private not-for-profit
+249,"Rutgers University, Camden",NJ,Public
+250,Michigan Technological University,MI,Public
+251,Calvin University,MI,Private not-for-profit
+252,Portland State University,OR,Public
+253,Gonzaga University,WA,Private not-for-profit
+254,Samford University,AL,Private not-for-profit
+255,Pacific Lutheran University,WA,Private not-for-profit
+256,University of Iowa,IA,Public
+257,Truman State University,MO,Public
+258,Manhattan University,NY,Private not-for-profit
+259,Loyola University Maryland,MD,Private not-for-profit
+260,Illinois State University,IL,Public
+261,University of Scranton,PA,Private not-for-profit
+262,Azusa Pacific University,CA,Private not-for-profit
+263,Clark University (MA),MA,Private not-for-profit
+264,Wayne State University,MI,Public
+265,Hope College,MI,Private not-for-profit
+266,California State University-Monterey Bay,CA,Public
+267,"California State University, Los Angeles",CA,Public
+268,Butler University,IN,Private not-for-profit
+269,"SUNY, Farmingdale State College",NY,Public
+270,University of Alabama,AL,Public
+271,"California State University, Northridge",CA,Public
+272,Saint Joseph's University (PA),PA,Private not-for-profit
+273,Appalachian State University,NC,Public
+274,Virginia Commonwealth University,VA,Public
+275,Providence College,RI,Private not-for-profit
+276,"University of Puerto Rico, Mayaguez",PR,Public
+277,Salisbury University,MD,Public
+278,Clarkson University,NY,Private not-for-profit
+279,Gustavus Adolphus College,MN,Private not-for-profit
+280,"California State University, Sacramento",CA,Public
+281,Fairfield University,CT,Private not-for-profit
+282,University of Detroit Mercy,MI,Private not-for-profit
+283,"University of Wisconsin, Eau Claire",WI,Public
+284,Milwaukee School of Engineering,WI,Private not-for-profit
+285,California State University-San Marcos,CA,Public
+286,The Catholic University of America,DC,Private not-for-profit
+287,Drake University,IA,Private not-for-profit
+288,Adelphi University,NY,Private not-for-profit
+289,Western Washington University,WA,Public
+290,The Juilliard School,NY,Private not-for-profit
+291,University of Michigan-Dearborn,MI,Public
+292,Mississippi State University,MS,Public
+293,St. Edward's University,TX,Private not-for-profit
+294,New College of Florida,FL,Public
+295,Muhlenberg College,PA,Private not-for-profit
+296,University of North Dakota,ND,Public
+297,Duquesne University,PA,Private not-for-profit
+298,Montclair State University,NJ,Public
+299,St. Mary's College of Maryland,MD,Public
+300,The University of Texas at San Antonio,TX,Public
+301,"California State University, Stanislaus",CA,Public
+302,Christopher Newport University,VA,Public
+303,West Virginia University,WV,Public
+304,Southwestern University,TX,Private not-for-profit
+305,Bradley University,IL,Private not-for-profit
+306,Virginia Military Institute,VA,Public
+307,Utah State University,UT,Public
+308,"California State University, East Bay",CA,Public
+309,University of Louisville,KY,Public
+310,Ohio Northern University,OH,Private not-for-profit
+311,Hofstra University,NY,Private not-for-profit
+312,Lawrence University,WI,Private not-for-profit
+313,University of Alabama at Birmingham,AL,Public
+314,University of New Hampshire,NH,Public
+315,Denison University,OH,Private not-for-profit
+316,University of Mary Washington,VA,Public
+317,"Embry-Riddle Aeronautical University, Prescott",AZ,Private not-for-profit
+318,Hampden-Sydney College,VA,Private not-for-profit
+319,"Indiana University-Purdue University, Indianapolis",IN,Public
+320,University of Idaho,ID,Public
+321,Berea College,KY,Private not-for-profit
+322,University of Rhode Island,RI,Public
+323,Valparaiso University,IN,Private not-for-profit
+324,Saint Mary's College of California,CA,Private not-for-profit
+325,Westmont College,CA,Private not-for-profit
+326,"CUNY, Lehman College",NY,Public
+327,Siena College,NY,Private not-for-profit
+328,Wentworth Institute of Technology,MA,Private not-for-profit
+329,Illinois Wesleyan University,IL,Private not-for-profit
+330,University of North Florida,FL,Public
+331,Linfield University,OR,Private not-for-profit
+332,Ursinus College,PA,Private not-for-profit
+333,D'Youville University,NY,Private not-for-profit
+334,Wagner College,NY,Private not-for-profit
+335,"University of Nevada, Las Vegas",NV,Public
+336,University of West Florida,FL,Public
+337,"California State University, Channel Islands",CA,Public
+338,Pennsylvania State University-Main Campus,PA,Public
+339,University of Missouri-Kansas City,MO,Public
+340,Willamette University,OR,Private not-for-profit
+341,Florida Gulf Coast University,FL,Public
+342,"University of Houston, Clear Lake",TX,Public
+343,John Carroll University,OH,Private not-for-profit
+344,Rockhurst University,MO,Private not-for-profit
+345,Montana State University,MT,Public
+346,Augustana College,IL,Private not-for-profit
+347,Bryant University,RI,Private not-for-profit
+348,University of Massachusetts Lowell,MA,Public
+349,University of Puget Sound,WA,Private not-for-profit
+350,College of Wooster,OH,Private not-for-profit
+351,New York Institute of Technology,NY,Private not-for-profit
+352,University of Alabama in Huntsville,AL,Public
+353,Northern Arizona University,AZ,Public
+354,University of St. Thomas (TX),TX,Private not-for-profit
+355,University of Cincinnati,OH,Public
+356,Massachusetts Maritime Academy,MA,Public
+357,Sarah Lawrence College,NY,Private not-for-profit
+358,"University of Florida, Online",FL,Public
+359,"University of Texas, El Paso",TX,Public
+360,SUNY Polytechnic Institute,NY,Public
+361,"SUNY, College at New Paltz",NY,Public
+362,California Lutheran University,CA,Private not-for-profit
+363,South Dakota School of Mines and Technology,SD,Public
+364,Mercer University,GA,Private not-for-profit
+365,Stonehill College,MA,Private not-for-profit
+366,Maine Maritime Academy,ME,Public
+367,Soka University of America,CA,Private not-for-profit
+368,North Dakota State University,ND,Public
+369,"University of Minnesota, Duluth",MN,Public
+370,Art Center College of Design,CA,Private not-for-profit
+371,Lewis & Clark College,OR,Private not-for-profit
+372,Bard College,NY,Private not-for-profit
+373,University of Wisconsin-Platteville,WI,Public
+374,New School,NY,Private not-for-profit
+375,"University of Wisconsin, La Crosse",WI,Public
+376,Lewis University,IL,Private not-for-profit
+377,Rollins College,FL,Private not-for-profit
+378,Belmont University,TN,Private not-for-profit
+379,Northern Illinois University,IL,Public
+380,St. John's University (NY),NY,Private not-for-profit
+381,"California State University, San Bernardino",CA,Public
+382,Molloy College,NY,Private not-for-profit
+383,Howard University,DC,Private not-for-profit
+384,Oakland University,MI,Public
+385,Saint Peter's University,NJ,Private not-for-profit
+386,Capitol Technology University,MD,Private not-for-profit
+387,University of Illinois at Springfield,IL,Public
+388,California State University-Bakersfield,CA,Public
+389,Charter Oak State College,CT,Public
+390,Lake Forest College,IL,Private not-for-profit
+391,Biola University,CA,Private not-for-profit
+392,Taylor University,IN,Private not-for-profit
+393,Chapman University,CA,Private not-for-profit
+394,Quinnipiac University,CT,Private not-for-profit
+395,University of Northern Iowa,IA,Public
+396,Rowan University,NJ,Public
+397,College of Saint Benedict,MN,Private not-for-profit
+398,Spelman College,GA,Private not-for-profit
+399,University of North Georgia,GA,Public
+400,Oregon Institute of Technology,OR,Public
+401,Berry College,GA,Private not-for-profit
+402,Washington & Jefferson College,PA,Private not-for-profit
+403,Elmhurst University,IL,Private not-for-profit
+404,Georgia College & State University,GA,Public
+405,Menlo College,CA,Private not-for-profit
+406,Ithaca College,NY,Private not-for-profit
+407,"University of New Hampshire, Manchester",NH,Public
+408,Texas State University,TX,Public
+409,William Jewell College,MO,Private not-for-profit
+410,Emerson College,MA,Private not-for-profit
+411,Dominican University of California,CA,Private not-for-profit
+412,Drew University,NJ,Private not-for-profit
+413,Bethel University,MN,Private not-for-profit
+414,Le Moyne College,NY,Private not-for-profit
+415,Emmanuel College,MA,Private not-for-profit
+415,La Salle University,PA,Private not-for-profit
+417,Grand Valley State University,MI,Public
+418,Marymount University,VA,Private not-for-profit
+419,Austin College,TX,Private not-for-profit
+420,Wheaton College (MA),MA,Private not-for-profit
+421,Pratt Institute,NY,Private not-for-profit
+422,University of Dallas,TX,Private not-for-profit
+423,LIU Post,NY,Private not-for-profit
+424,Lebanon Valley College,PA,Private not-for-profit
+425,Canisius University,NY,Private not-for-profit
+426,Berklee College of Music,MA,Private not-for-profit
+427,"SUNY, College at Oneonta",NY,Public
+428,Western Michigan University,MI,Public
+429,Seattle Pacific University,WA,Private not-for-profit
+430,Thomas Jefferson University,PA,Private not-for-profit
+431,College of Charleston,SC,Public
+432,"SUNY, College of Environmental Science and Forestry",NY,Public
+433,St. Joseph's College (NY),NY,Private not-for-profit
+434,Mount Saint Mary's University (CA),CA,Private not-for-profit
+435,Lipscomb University,TN,Private not-for-profit
+436,Monmouth University,NJ,Private not-for-profit
+437,Abilene Christian University,TX,Private not-for-profit
+438,Maryville University of Saint Louis,MO,Private not-for-profit
+439,Susquehanna University,PA,Private not-for-profit
+440,"University of North Carolina, Wilmington",NC,Public
+441,Pace University,NY,Private not-for-profit
+442,Saint Mary's University of Minnesota,MN,Private not-for-profit
+443,Augustana University,SD,Private not-for-profit
+444,University of Massachusetts Boston,MA,Public
+445,"Embry-Riddle Aeronautical University, Worldwide",FL,Private not-for-profit
+446,Western Governors University,UT,Private not-for-profit
+447,Tennessee Technological University,TN,Public
+448,Georgia Southern University,GA,Public
+449,"University of Texas, Rio Grande Valley",TX,Public
+450,Washington College,MD,Private not-for-profit
+451,"CUNY, College of Staten Island",NY,Public
+452,California State University-Dominguez Hills,CA,Public
+453,Hendrix College,AR,Private not-for-profit
+454,Montana Tech of the University of Montana,MT,Public
+455,Assumption University,MA,Private not-for-profit
+456,Christian Brothers University,TN,Private not-for-profit
+457,Touro University,NY,Private not-for-profit
+458,North Central College,IL,Private not-for-profit
+459,Simmons University,MA,Private not-for-profit
+460,Marist College,NY,Private not-for-profit
+461,"University of Minnesota, Morris",MN,Public
+462,University of New Mexico,NM,Public
+463,Agnes Scott College,GA,Private not-for-profit
+464,Saint John Fisher University,NY,Private not-for-profit
+464,St. Catherine University,MN,Private not-for-profit
+466,Concordia College—Moorhead,MN,Private not-for-profit
+467,Middle Tennessee State University,TN,Public
+468,"University of Nebraska, Omaha",NE,Public
+469,Albion College,MI,Private not-for-profit
+470,Louisiana Tech University,LA,Public
+471,East Carolina University,NC,Public
+472,Beloit College,WI,Private not-for-profit
+473,Loras College,IA,Private not-for-profit
+474,Salve Regina University,RI,Private not-for-profit
+475,Ohio University,OH,Public
+476,The University of Tennessee-Chattanooga,TN,Public
+477,SUNY College at Old Westbury,NY,Public
+478,Cedarville University,OH,Private not-for-profit
+479,Elizabethtown College,PA,Private not-for-profit
+480,College of St. Scholastica,MN,Private not-for-profit
+481,Presbyterian College,SC,Private not-for-profit
+482,California Institute of the Arts,CA,Private not-for-profit
+483,Boise State University,ID,Public
+484,Kennesaw State University,GA,Public
+485,Iona University,NY,Private not-for-profit
+486,Regis University,CO,Private not-for-profit
+487,Brigham Young University-Idaho,ID,Private not-for-profit
+488,College of the Atlantic,ME,Private not-for-profit
+489,Luther College,IA,Private not-for-profit
+490,Manhattan School of Music,NY,Private not-for-profit
+491,High Point University,NC,Private not-for-profit
+492,Jacksonville University,FL,Private not-for-profit
+493,Bellarmine University,KY,Private not-for-profit
+494,Ohio Wesleyan University,OH,Private not-for-profit
+495,SUNY Cortland,NY,Public
+496,"University of Colorado, Denver",CO,Public
+497,Saint Mary's College (IN),IN,Private not-for-profit
+498,Georgia State University,GA,Public
+499,Xavier University,OH,Private not-for-profit
+500,Goldey-Beacom College,DE,Private not-for-profit

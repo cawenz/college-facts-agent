@@ -1,0 +1,1152 @@
+unitid,conference,match_method
+100654,Southwestern Athletic Conference,override
+100663,American Conference,exact_norm
+100706,Gulf South Conference,exact_norm
+100724,Southwestern Athletic Conference,exact_norm
+100751,Southeastern Conference,exact_norm
+100830,Gulf South Conference,exact_norm
+100858,Southeastern Conference,exact_norm
+101189,Southern States Athletic Conference,exact_norm
+101435,Collegiate Conference of the South,exact_norm
+101480,Conference USA,exact_norm
+101587,Gulf South Conference,exact_norm
+101675,Southern Intercollegiate Athletic Conference,exact_norm
+101693,Southern States Athletic Conference,exact_norm
+101709,Gulf South Conference,exact_norm
+101879,Atlantic Sun Conference,exact_norm
+101912,HBCU Athletic Conference,exact_norm
+102049,Southern Conference,exact_norm
+102094,Sun Belt Conference,exact_norm
+102234,Southern Intercollegiate Athletic Conference,exact_norm
+102270,HBCU Athletic Conference,exact_norm
+102298,HBCU Athletic Conference,exact_norm
+102368,Sun Belt Conference,exact_norm
+102377,Southern Intercollegiate Athletic Conference,exact_norm
+102553,Great Northwest Athletic Conference,exact_norm
+102614,Great Northwest Athletic Conference,exact_norm
+104151,Big 12 Conference,override
+104179,Big 12 Conference,exact_norm
+104586,Great Southwest Athletic Conference,exact_norm
+104717,Mountain West Conference,exact_norm
+105330,Big Sky Conference,exact_norm
+105899,Great Southwest Athletic Conference,exact_norm
+106245,Ohio Valley Conference,exact_norm
+106306,Continental Athletic Conference,exact_norm
+106342,St. Louis Intercollegiate Athletic Conference,exact_norm
+106397,Southeastern Conference,exact_norm
+106412,Southwestern Athletic Conference,exact_norm
+106458,Sun Belt Conference,exact_norm
+106467,Great American Conference,exact_norm
+106485,Great American Conference,exact_norm
+106704,Atlantic Sun Conference,exact_norm
+106713,American Midwest Conference,exact_norm
+106810,American Midwest Conference,exact_norm
+107044,Great American Conference,exact_norm
+107071,Great American Conference,exact_norm
+107080,Southern Collegiate Athletic Conference,exact_norm
+107141,Sooner Athletic Conference,exact_norm
+107512,Great American Conference,exact_norm
+107558,Southern Collegiate Athletic Conference,exact_norm
+107600,HBCU Athletic Conference,exact_norm
+107877,American Midwest Conference,exact_norm
+107983,Great American Conference,exact_norm
+108092,Mid-America Intercollegiate Athletics Association,exact_norm
+109785,Pacific West Conference,exact_norm
+110097,Pacific West Conference,exact_norm
+110361,Western Athletic Conference,exact_norm
+110404,Southern California Intercollegiate Athletic Conference,exact_norm
+110413,Southern California Intercollegiate Athletic Conference,exact_norm
+110422,Big West Conference,exact_norm
+110486,Big West Conference,exact_norm
+110495,California Collegiate Athletic Association,exact_norm
+110510,California Collegiate Athletic Association,exact_norm
+110529,California Collegiate Athletic Association,exact_norm
+110538,California Collegiate Athletic Association,exact_norm
+110547,California Collegiate Athletic Association,exact_norm
+110556,Mountain West Conference,exact_norm
+110565,Big West Conference,exact_norm
+110574,California Collegiate Athletic Association,exact_norm
+110583,Big West Conference,exact_norm
+110592,California Collegiate Athletic Association,exact_norm
+110608,Big West Conference,exact_norm
+110617,Big Sky Conference,exact_norm
+110635,Atlantic Coast Conference,exact_norm
+110644,Big West Conference,exact_norm
+110653,Big West Conference,exact_norm
+110662,Big Ten Conference,exact_norm
+110671,Big West Conference,exact_norm
+110680,Big West Conference,exact_norm
+110705,Big West Conference,exact_norm
+110714,Coast to Coast Athletic Conference,exact_norm
+111948,Southern California Intercollegiate Athletic Conference,exact_norm
+112075,Pacific West Conference,exact_norm
+113698,Pacific West Conference,exact_norm
+114813,Pacific West Conference,exact_norm
+115755,California Collegiate Athletic Association,exact_norm
+117104,Great Southwest Athletic Conference,exact_norm
+117140,Southern California Intercollegiate Athletic Conference,exact_norm
+117627,Great Southwest Athletic Conference,exact_norm
+117946,West Coast Conference,exact_norm
+120254,Southern California Intercollegiate Athletic Conference,exact_norm
+120537,Great Southwest Athletic Conference,exact_norm
+120865,California Pacific Conference,exact_norm
+120883,West Coast Conference,exact_norm
+121150,West Coast Conference,exact_norm
+121309,Pacific West Conference,exact_norm
+121691,Southern California Intercollegiate Athletic Conference,exact_norm
+122409,Mountain West Conference,exact_norm
+122436,West Coast Conference,exact_norm
+122597,California Collegiate Athletic Association,exact_norm
+122612,West Coast Conference,exact_norm
+122755,Mountain West Conference,exact_norm
+122931,West Coast Conference,exact_norm
+123457,California Pacific Conference,exact_norm
+123554,West Coast Conference,exact_norm
+123961,Big Ten Conference,exact_norm
+125727,Pacific West Conference,exact_norm
+125763,Southern California Intercollegiate Athletic Conference,exact_norm
+126182,Rocky Mountain Athletic Conference,exact_norm
+126580,Rocky Mountain Athletic Conference,exact_norm
+126614,Big 12 Conference,exact_norm
+126669,Rocky Mountain Athletic Conference,exact_norm
+126678,Southern Collegiate Athletic Conference,exact_norm
+126775,Rocky Mountain Athletic Conference,exact_norm
+126818,Mountain West Conference,exact_norm
+127060,Summit League,exact_norm
+127185,Rocky Mountain Athletic Conference,exact_norm
+127556,Rocky Mountain Athletic Conference,exact_norm
+127565,Rocky Mountain Athletic Conference,exact_norm
+127741,Big Sky Conference,exact_norm
+127918,Rocky Mountain Athletic Conference,exact_norm
+128106,Rocky Mountain Athletic Conference,exact_norm
+128391,Rocky Mountain Athletic Conference,exact_norm
+128498,Great Northeast Athletic Conference,exact_norm
+128744,Central Atlantic Collegiate Conference,exact_norm
+128771,NEC,exact_norm
+128902,New England Small College Athletic Conference,exact_norm
+129020,Big East Conference,exact_norm
+129215,Little East Conference,exact_norm
+129242,Metro Atlantic Athletic Conference,exact_norm
+129525,Conference of New England,exact_norm
+129774,Great Northeast Athletic Conference,exact_norm
+130183,Central Atlantic Collegiate Conference,exact_norm
+130226,Metro Atlantic Athletic Conference,exact_norm
+130253,Metro Atlantic Athletic Conference,exact_norm
+130314,Great Northeast Athletic Conference,exact_norm
+130493,Northeast-10 Conference,exact_norm
+130590,New England Small College Athletic Conference,exact_norm
+130697,New England Small College Athletic Conference,exact_norm
+130776,Little East Conference,exact_norm
+130794,Ivy League,exact_norm
+130934,Mid-Eastern Athletic Conference,exact_norm
+130943,Conference USA,exact_norm
+130989,Central Atlantic Collegiate Conference,exact_norm
+131113,Central Atlantic Collegiate Conference,exact_norm
+131159,Patriot League,exact_norm
+131283,Landmark Conference,exact_norm
+131399,East Coast Conference,exact_norm
+131450,United East Conference,exact_norm
+131469,Atlantic 10 Conference,exact_norm
+131496,Big East Conference,exact_norm
+131520,Mid-Eastern Athletic Conference,exact_norm
+131876,Independent,exact_norm
+132471,Sunshine State Conference,exact_norm
+132602,Southwestern Athletic Conference,exact_norm
+132657,Sunshine State Conference,exact_norm
+132903,Big 12 Conference,exact_norm
+133492,Sunshine State Conference,exact_norm
+133526,Southern Intercollegiate Athletic Conference,exact_norm
+133650,Southwestern Athletic Conference,exact_norm
+133669,American Conference,exact_norm
+133711,Peach Belt Conference,exact_norm
+133809,Continental Athletic Conference,exact_norm
+133881,Sunshine State Conference,exact_norm
+133951,Conference USA,exact_norm
+133979,Sun Conference,exact_norm
+134079,Sunshine State Conference,exact_norm
+134097,Atlantic Coast Conference,exact_norm
+134130,Southeastern Conference,exact_norm
+134945,Atlantic Sun Conference,exact_norm
+135726,Atlantic Coast Conference,exact_norm
+136172,Atlantic Sun Conference,exact_norm
+136215,Sunshine State Conference,exact_norm
+136330,Sunshine State Conference,exact_norm
+136950,Sunshine State Conference,exact_norm
+137032,Sunshine State Conference,exact_norm
+137351,American Conference,exact_norm
+137476,Sun Conference,exact_norm
+137546,Atlantic Sun Conference,exact_norm
+137564,Sun Conference,exact_norm
+137847,Sunshine State Conference,exact_norm
+138275,Sun Conference,exact_norm
+138293,Sun Conference,exact_norm
+138354,Gulf South Conference,exact_norm
+138558,Southern States Athletic Conference,exact_norm
+138716,Southern Intercollegiate Athletic Conference,exact_norm
+138868,Southern States Athletic Conference,exact_norm
+138947,Southern Intercollegiate Athletic Conference,exact_norm
+139144,Southern Athletic Association,exact_norm
+139199,Appalachian Athletic Conference,exact_norm
+139250,Sun Conference,exact_norm
+139311,Peach Belt Conference,exact_norm
+139366,Peach Belt Conference,exact_norm
+139393,Collegiate Conference of the South,exact_norm
+139463,Southern States Athletic Conference,exact_norm
+139630,Conference Carolinas,exact_norm
+139658,University Athletic Association,exact_norm
+139719,Southern Intercollegiate Athletic Conference,exact_norm
+139755,Atlantic Coast Conference,exact_norm
+139764,Peach Belt Conference,exact_norm
+139861,Peach Belt Conference,exact_norm
+139931,Sun Belt Conference,exact_norm
+139940,Sun Belt Conference,exact_norm
+139959,Southeastern Conference,exact_norm
+140234,Collegiate Conference of the South,exact_norm
+140252,Southern States Athletic Conference,exact_norm
+140447,Southern Conference,exact_norm
+140696,Southern Athletic Association,exact_norm
+140818,Collegiate Conference of the South,exact_norm
+140872,Appalachian Athletic Conference,exact_norm
+140951,Sun Conference,exact_norm
+140960,Southern Intercollegiate Athletic Conference,exact_norm
+140988,Conference Carolinas,exact_norm
+141167,Southern States Athletic Conference,exact_norm
+141237,Appalachian Athletic Conference,exact_norm
+141264,Gulf South Conference,exact_norm
+141361,Conference Carolinas,exact_norm
+141486,Pacific West Conference,exact_norm
+141565,Pacific West Conference,fuzzy_0.95+
+141644,Pacific West Conference,override
+142115,Mountain West Conference,exact_norm
+142276,Big Sky Conference,exact_norm
+142285,Big Sky Conference,exact_norm
+142294,Cascade Collegiate Conference,exact_norm
+142328,Cascade Collegiate Conference,exact_norm
+142461,Great Northwest Athletic Conference,exact_norm
+143084,College Conference of Illinois and Wisconsin,exact_norm
+143118,Northern Athletics Collegiate Conference,exact_norm
+143288,St. Louis Intercollegiate Athletic Conference,exact_norm
+143358,Missouri Valley Conference,exact_norm
+144005,NEC,exact_norm
+144050,University Athletic Association,exact_norm
+144351,Northern Athletics Collegiate Conference,exact_norm
+144740,Big East Conference,exact_norm
+144892,Ohio Valley Conference,exact_norm
+144962,College Conference of Illinois and Wisconsin,exact_norm
+144971,St. Louis Intercollegiate Athletic Conference,exact_norm
+145336,Chicagoland Collegiate Athletic Conference,exact_norm
+145372,St. Louis Intercollegiate Athletic Conference,exact_norm
+145600,Missouri Valley Conference,exact_norm
+145619,Northern Athletics Collegiate Conference,exact_norm
+145637,Big Ten Conference,exact_norm
+145646,College Conference of Illinois and Wisconsin,exact_norm
+145691,Midwest Conference,exact_norm
+145725,Northern Athletics Collegiate Conference,exact_norm
+145813,Missouri Valley Conference,exact_norm
+146339,Chicagoland Collegiate Athletic Conference,exact_norm
+146427,Midwest Conference,exact_norm
+146481,Midwest Conference,exact_norm
+146612,Great Lakes Valley Conference,exact_norm
+146719,Atlantic 10 Conference,exact_norm
+147013,Great Lakes Valley Conference,exact_norm
+147244,College Conference of Illinois and Wisconsin,exact_norm
+147341,Midwest Conference,exact_norm
+147660,College Conference of Illinois and Wisconsin,exact_norm
+147679,College Conference of Illinois and Wisconsin,exact_norm
+147703,Mid-American Conference,exact_norm
+147767,Big Ten Conference,exact_norm
+147828,Chicagoland Collegiate Athletic Conference,exact_norm
+148016,St. Louis Intercollegiate Athletic Conference,exact_norm
+148131,Great Lakes Valley Conference,exact_norm
+148405,Northern Athletics Collegiate Conference,exact_norm
+148496,Northern Athletics Collegiate Conference,exact_norm
+148584,Chicagoland Collegiate Athletic Conference,exact_norm
+148627,Chicagoland Collegiate Athletic Conference,exact_norm
+148654,Great Lakes Valley Conference,exact_norm
+149222,Missouri Valley Conference,exact_norm
+149231,Ohio Valley Conference,exact_norm
+149505,Chicagoland Collegiate Athletic Conference,exact_norm
+149772,Ohio Valley Conference,exact_norm
+149781,College Conference of Illinois and Wisconsin,exact_norm
+150136,Mid-American Conference,exact_norm
+150163,Big East Conference,exact_norm
+150400,North Coast Athletic Conference,exact_norm
+150455,Heartland Collegiate Athletic Conference,exact_norm
+150534,Missouri Valley Conference,exact_norm
+150604,Heartland Collegiate Athletic Conference,exact_norm
+150668,Crossroads League,exact_norm
+150756,Heartland Collegiate Athletic Conference,exact_norm
+150774,Chicagoland Collegiate Athletic Conference,exact_norm
+150941,Crossroads League,exact_norm
+151102,Horizon League,exact_norm
+151111,Horizon League,exact_norm
+151263,Great Lakes Valley Conference,exact_norm
+151306,Ohio Valley Conference,exact_norm
+151324,Missouri Valley Conference,exact_norm
+151351,Big Ten Conference,exact_norm
+151777,Heartland Collegiate Athletic Conference,exact_norm
+152099,River States Conference,exact_norm
+152318,Heartland Collegiate Athletic Conference,exact_norm
+152530,Crossroads League,exact_norm
+152567,Michigan Intercollegiate Athletic Association,exact_norm
+152600,Missouri Valley Conference,exact_norm
+152992,Great Plains Athletic Conference,exact_norm
+153001,American Rivers Conference,exact_norm
+153108,American Rivers Conference,exact_norm
+153126,Heart of America Athletic Conference,exact_norm
+153144,American Rivers Conference,exact_norm
+153162,Midwest Conference,exact_norm
+153250,Great Plains Athletic Conference,exact_norm
+153269,Missouri Valley Conference,exact_norm
+153278,American Rivers Conference,exact_norm
+153375,Heart of America Athletic Conference,exact_norm
+153384,Midwest Conference,exact_norm
+153603,Big 12 Conference,override
+153825,American Rivers Conference,exact_norm
+153834,American Rivers Conference,exact_norm
+154004,Great Plains Athletic Conference,exact_norm
+154013,Heart of America Athletic Conference,exact_norm
+154095,Missouri Valley Conference,exact_norm
+154101,Great Plains Athletic Conference,exact_norm
+154235,Chicagoland Collegiate Athletic Conference,exact_norm
+154350,American Rivers Conference,exact_norm
+154493,Great Lakes Valley Conference,exact_norm
+154518,Great Plains Athletic Conference,exact_norm
+154527,American Rivers Conference,exact_norm
+154590,Heart of America Athletic Conference,exact_norm
+154688,Heart of America Athletic Conference,exact_norm
+154712,Heart of America Athletic Conference,exact_norm
+154855,Sooner Athletic Conference,exact_norm
+155025,Mid-America Intercollegiate Athletics Association,exact_norm
+155061,Mid-America Intercollegiate Athletics Association,exact_norm
+155089,Kansas Collegiate Athletic Conference,exact_norm
+155140,Continental Athletic Conference,exact_norm
+155177,Continental Athletic Conference,exact_norm
+155317,Big 12 Conference,exact_norm
+155335,Mid-America Intercollegiate Athletics Association,exact_norm
+155399,Big 12 Conference,exact_norm
+155414,Kansas Collegiate Athletic Conference,exact_norm
+155511,Kansas Collegiate Athletic Conference,exact_norm
+155520,Heart of America Athletic Conference,exact_norm
+155681,Mid-America Intercollegiate Athletics Association,exact_norm
+155812,Kansas Collegiate Athletic Conference,exact_norm
+155937,Kansas Collegiate Athletic Conference,exact_norm
+155973,Kansas Collegiate Athletic Conference,exact_norm
+156082,Mid-America Intercollegiate Athletics Association,exact_norm
+156125,American Conference,exact_norm
+156189,Continental Athletic Conference,exact_norm
+156213,Collegiate Conference of the South,exact_norm
+156286,Atlantic Sun Conference,exact_norm
+156295,Heartland Collegiate Athletic Conference,exact_norm
+156356,River States Conference,exact_norm
+156365,Mid-South Conference,exact_norm
+156408,Southern Athletic Association,exact_norm
+156541,Mid-South Conference,exact_norm
+156620,Atlantic Sun Conference,exact_norm
+156745,Mid-South Conference,exact_norm
+157058,Southern Intercollegiate Athletic Conference,exact_norm
+157076,Great Midwest Athletic Conference,exact_norm
+157085,Southeastern Conference,exact_norm
+157100,River States Conference,exact_norm
+157289,Atlantic Coast Conference,exact_norm
+157377,River States Conference,exact_norm
+157386,Ohio Valley Conference,exact_norm
+157401,Missouri Valley Conference,exact_norm
+157447,Horizon League,exact_norm
+157535,Appalachian Athletic Conference,exact_norm
+157757,St. Louis Intercollegiate Athletic Conference,exact_norm
+157809,Great Midwest Athletic Conference,exact_norm
+157818,Heartland Collegiate Athletic Conference,exact_norm
+157863,Appalachian Athletic Conference,exact_norm
+157951,Conference USA,exact_norm
+158477,Southern Collegiate Athletic Conference,exact_norm
+158802,HBCU Athletic Conference,exact_norm
+159009,Southwestern Athletic Conference,exact_norm
+159391,Southeastern Conference,exact_norm
+159568,Red River Athletic Conference,exact_norm
+159647,Conference USA,exact_norm
+159656,Southern States Athletic Conference,exact_norm
+159717,Southland Conference,exact_norm
+159939,Southland Conference,exact_norm
+159966,Southland Conference,exact_norm
+159993,Sun Belt Conference,exact_norm
+160038,Southland Conference,exact_norm
+160612,Southland Conference,exact_norm
+160621,Southwestern Athletic Conference,exact_norm
+160658,Sun Belt Conference,exact_norm
+160755,American Conference,exact_norm
+160904,Red River Athletic Conference,exact_norm
+160977,New England Small College Athletic Conference,exact_norm
+161004,New England Small College Athletic Conference,exact_norm
+161086,New England Small College Athletic Conference,exact_norm
+161226,North Atlantic Conference,exact_norm
+161253,America East Conference,exact_norm
+161299,North Atlantic Conference,exact_norm
+161341,North Atlantic Conference,exact_norm
+161457,Conference of New England,exact_norm
+161518,Great Northeast Athletic Conference,exact_norm
+161554,Little East Conference,exact_norm
+161563,North Atlantic Conference,exact_norm
+162007,Central Intercollegiate Athletic Association,exact_norm
+162210,Continental Athletic Conference,exact_norm
+162283,Mid-Eastern Athletic Conference,exact_norm
+162584,Mountain East Conference,exact_norm
+162654,Landmark Conference,exact_norm
+162760,MAC Commonwealth,exact_norm
+162928,Centennial Conference,exact_norm
+163046,Patriot League,exact_norm
+163268,America East Conference,exact_norm
+163338,Mid-Eastern Athletic Conference,exact_norm
+163453,Mid-Eastern Athletic Conference,exact_norm
+163462,Metro Atlantic Athletic Conference,exact_norm
+163578,United East Conference,exact_norm
+163851,Coast to Coast Athletic Conference,exact_norm
+163912,United East Conference,exact_norm
+164076,Coastal Athletic Association,exact_norm
+164173,MAC Commonwealth,exact_norm
+164216,Centennial Conference,exact_norm
+164270,Centennial Conference,exact_norm
+164447,Northeast-10 Conference,exact_norm
+164465,New England Small College Athletic Conference,exact_norm
+164492,Massachusetts State Collegiate Athletic Conference,exact_norm
+164562,Northeast-10 Conference,exact_norm
+164580,New England Women's and Men's Athletic Conference,exact_norm
+164739,Northeast-10 Conference,exact_norm
+164924,Atlantic Coast Conference,exact_norm
+164988,Patriot League,exact_norm
+165015,University Athletic Association,exact_norm
+165024,Massachusetts State Collegiate Athletic Conference,exact_norm
+165334,New England Women's and Men's Athletic Conference,exact_norm
+165529,Conference of New England,exact_norm
+165574,Great Northeast Athletic Conference,exact_norm
+165662,New England Women's and Men's Athletic Conference,exact_norm
+165671,Great Northeast Athletic Conference,exact_norm
+165699,Conference of New England,exact_norm
+165802,Continental Athletic Conference,exact_norm
+165820,Massachusetts State Collegiate Athletic Conference,exact_norm
+165866,Massachusetts State Collegiate Athletic Conference,exact_norm
+165936,Conference of New England,exact_norm
+166027,Ivy League,exact_norm
+166124,Patriot League,exact_norm
+166391,Great Northeast Athletic Conference,exact_norm
+166452,North Atlantic Conference,exact_norm
+166513,America East Conference,exact_norm
+166629,Mid-American Conference,exact_norm
+166638,Little East Conference,exact_norm
+166683,New England Women's and Men's Athletic Conference,exact_norm
+166692,Massachusetts State Collegiate Athletic Conference,exact_norm
+166850,Metro Atlantic Athletic Conference,exact_norm
+167260,Conference of New England,exact_norm
+167288,Massachusetts State Collegiate Athletic Conference,exact_norm
+167358,Coastal Athletic Association,exact_norm
+167598,Great Northeast Athletic Conference,exact_norm
+167729,Massachusetts State Collegiate Athletic Conference,exact_norm
+167899,New England Women's and Men's Athletic Conference,exact_norm
+167987,Little East Conference,exact_norm
+167996,NEC,exact_norm
+168005,Conference of New England,exact_norm
+168148,New England Small College Athletic Conference,exact_norm
+168218,New England Women's and Men's Athletic Conference,exact_norm
+168227,Conference of New England,exact_norm
+168254,Conference of New England,exact_norm
+168263,Massachusetts State Collegiate Athletic Conference,exact_norm
+168342,New England Small College Athletic Conference,exact_norm
+168421,New England Women's and Men's Athletic Conference,exact_norm
+168430,Massachusetts State Collegiate Athletic Conference,exact_norm
+168528,Michigan Intercollegiate Athletic Association,exact_norm
+168546,Michigan Intercollegiate Athletic Association,exact_norm
+168591,Michigan Intercollegiate Athletic Association,exact_norm
+168786,Wolverine–Hoosier Athletic Conference,exact_norm
+169080,Michigan Intercollegiate Athletic Association,exact_norm
+169248,Mid-American Conference,exact_norm
+169327,Wolverine–Hoosier Athletic Conference,exact_norm
+169479,Great Lakes Intercollegiate Athletic Conference,exact_norm
+169716,Horizon League,exact_norm
+169798,Mid-American Conference,exact_norm
+169910,Great Lakes Intercollegiate Athletic Conference,exact_norm
+170037,Wolverine–Hoosier Athletic Conference,exact_norm
+170082,Great Lakes Intercollegiate Athletic Conference,exact_norm
+170301,Michigan Intercollegiate Athletic Association,exact_norm
+170532,Michigan Intercollegiate Athletic Association,exact_norm
+170639,Great Lakes Intercollegiate Athletic Conference,exact_norm
+170806,Wolverine–Hoosier Athletic Conference,exact_norm
+170976,Big Ten Conference,exact_norm
+171100,Big Ten Conference,exact_norm
+171128,Great Lakes Intercollegiate Athletic Conference,exact_norm
+171137,Wolverine–Hoosier Athletic Conference,exact_norm
+171456,Great Lakes Intercollegiate Athletic Conference,exact_norm
+171492,Great Midwest Athletic Conference,exact_norm
+171571,Horizon League,exact_norm
+171599,Michigan Intercollegiate Athletic Association,exact_norm
+172051,Great Lakes Intercollegiate Athletic Conference,exact_norm
+172264,Wolverine–Hoosier Athletic Conference,exact_norm
+172334,Crossroads League,exact_norm
+172644,Great Lakes Intercollegiate Athletic Conference,exact_norm
+172699,Mid-American Conference,exact_norm
+173045,Minnesota Intercollegiate Athletic Conference,exact_norm
+173124,Northern Sun Intercollegiate Conference,exact_norm
+173142,Upper Midwest Athletic Conference,exact_norm
+173258,Minnesota Intercollegiate Athletic Conference,exact_norm
+173328,Northern Sun Intercollegiate Conference,override
+173452,Upper Midwest Athletic Conference,exact_norm
+173647,Minnesota Intercollegiate Athletic Conference,exact_norm
+173665,Minnesota Intercollegiate Athletic Conference,exact_norm
+173902,Minnesota Intercollegiate Athletic Conference,exact_norm
+173920,Northern Sun Intercollegiate Conference,exact_norm
+174066,Big Ten Conference,exact_norm
+174075,Northern Sun Intercollegiate Conference,exact_norm
+174233,Northern Sun Intercollegiate Conference,exact_norm
+174251,Upper Midwest Athletic Conference,exact_norm
+174358,Northern Sun Intercollegiate Conference,exact_norm
+174437,Upper Midwest Athletic Conference,exact_norm
+174491,Upper Midwest Athletic Conference,exact_norm
+174783,Northern Sun Intercollegiate Conference,exact_norm
+174817,Minnesota Intercollegiate Athletic Conference,exact_norm
+174844,Minnesota Intercollegiate Athletic Conference,exact_norm
+174862,Upper Midwest Athletic Conference,exact_norm
+174899,Minnesota Intercollegiate Athletic Conference,exact_norm
+175005,Minnesota Intercollegiate Athletic Conference,exact_norm
+175078,Northern Sun Intercollegiate Conference,exact_norm
+175272,Northern Sun Intercollegiate Conference,exact_norm
+175342,Southwestern Athletic Conference,exact_norm
+175421,Collegiate Conference of the South,exact_norm
+175430,Southern States Athletic Conference,exact_norm
+175616,Gulf South Conference,exact_norm
+175856,Southwestern Athletic Conference,exact_norm
+175980,Southern Athletic Association,exact_norm
+176017,Southeastern Conference,exact_norm
+176035,St. Louis Intercollegiate Athletic Conference,exact_norm
+176044,Southwestern Athletic Conference,exact_norm
+176053,Gulf South Conference,exact_norm
+176080,Southeastern Conference,exact_norm
+176318,HBCU Athletic Conference,exact_norm
+176372,Sun Belt Conference,exact_norm
+176406,HBCU Athletic Conference,exact_norm
+176479,Southern States Athletic Conference,exact_norm
+176628,Kansas Collegiate Athletic Conference,exact_norm
+176664,American Midwest Conference,exact_norm
+176965,Mid-America Intercollegiate Athletics Association,exact_norm
+177144,Heart of America Athletic Conference,exact_norm
+177214,Great Lakes Valley Conference,exact_norm
+177339,Kansas Collegiate Athletic Conference,exact_norm
+177542,American Midwest Conference,exact_norm
+177551,American Midwest Conference,exact_norm
+177968,Ohio Valley Conference,exact_norm
+178244,Heart of America Athletic Conference,exact_norm
+178341,Mid-America Intercollegiate Athletics Association,exact_norm
+178369,Heart of America Athletic Conference,exact_norm
+178387,Mid-America Intercollegiate Athletics Association,exact_norm
+178402,Summit League,exact_norm
+178411,Great Lakes Valley Conference,exact_norm
+178420,Great Lakes Valley Conference,exact_norm
+178615,Great Lakes Valley Conference,exact_norm
+178624,Mid-America Intercollegiate Athletics Association,exact_norm
+178697,Sooner Athletic Conference,exact_norm
+178721,Heart of America Athletic Conference,exact_norm
+179043,Great Lakes Valley Conference,exact_norm
+179159,Atlantic 10 Conference,exact_norm
+179265,American Midwest Conference,exact_norm
+179326,Great Lakes Valley Conference,exact_norm
+179548,American Midwest Conference,exact_norm
+179557,Ohio Valley Conference,exact_norm
+179566,Conference USA,exact_norm
+179867,University Athletic Association,exact_norm
+179894,St. Louis Intercollegiate Athletic Conference,exact_norm
+179955,Great Lakes Valley Conference,exact_norm
+179964,Heart of America Athletic Conference,exact_norm
+180106,Frontier Conference,exact_norm
+180179,Great Northwest Athletic Conference,exact_norm
+180258,Frontier Conference,exact_norm
+180461,Big Sky Conference,exact_norm
+180489,Big Sky Conference,exact_norm
+180522,Frontier Conference,exact_norm
+180595,Frontier Conference,exact_norm
+180692,Frontier Conference,exact_norm
+180814,Frontier Conference,exact_norm
+180948,Rocky Mountain Athletic Conference,exact_norm
+180984,Great Plains Athletic Conference,exact_norm
+181002,Big East Conference,exact_norm
+181127,Great Plains Athletic Conference,exact_norm
+181215,Mid-America Intercollegiate Athletics Association,exact_norm
+181330,Great Plains Athletic Conference,exact_norm
+181394,Summit League,exact_norm
+181446,American Rivers Conference,exact_norm
+181464,Big Ten Conference,exact_norm
+181534,Heart of America Athletic Conference,exact_norm
+181783,Northern Sun Intercollegiate Conference,exact_norm
+181853,Kansas Collegiate Athletic Conference,exact_norm
+182281,Mountain West Conference,exact_norm
+182290,Mountain West Conference,exact_norm
+182634,Great Northeast Athletic Conference,exact_norm
+182670,Ivy League,exact_norm
+182795,Northeast-10 Conference,exact_norm
+182980,Great Northeast Athletic Conference,exact_norm
+183026,Northeast-10 Conference,exact_norm
+183044,America East Conference,exact_norm
+183062,Little East Conference,exact_norm
+183080,Little East Conference,exact_norm
+183211,Great Northeast Athletic Conference,exact_norm
+183239,Northeast-10 Conference,exact_norm
+183910,Central Atlantic Collegiate Conference,exact_norm
+183974,Atlantic East Conference,exact_norm
+184348,Landmark Conference,exact_norm
+184603,NEC,exact_norm
+184612,Central Atlantic Collegiate Conference,exact_norm
+184773,Central Atlantic Collegiate Conference,exact_norm
+184782,New Jersey Athletic Conference,exact_norm
+185129,New Jersey Athletic Conference,exact_norm
+185262,New Jersey Athletic Conference,exact_norm
+185572,Coastal Athletic Association,exact_norm
+185590,New Jersey Athletic Conference,exact_norm
+185828,America East Conference,exact_norm
+186131,Ivy League,exact_norm
+186283,Metro Atlantic Athletic Conference,exact_norm
+186371,New Jersey Athletic Conference,exact_norm
+186380,Big Ten Conference,exact_norm
+186399,New Jersey Athletic Conference,exact_norm
+186432,Metro Atlantic Athletic Conference,exact_norm
+186584,Big East Conference,exact_norm
+186618,Atlantic East Conference,exact_norm
+186867,MAC Freedom,exact_norm
+186876,New Jersey Athletic Conference,exact_norm
+187134,New Jersey Athletic Conference,exact_norm
+187648,Lone Star Conference,exact_norm
+187897,Rocky Mountain Athletic Conference,exact_norm
+187985,Mountain West Conference,exact_norm
+188030,Conference USA,exact_norm
+188058,California Pacific Conference,exact_norm
+188182,Red River Athletic Conference,exact_norm
+188304,Lone Star Conference,exact_norm
+188429,Northeast-10 Conference,exact_norm
+188641,Empire 8,exact_norm
+189088,Liberty League,exact_norm
+189705,Metro Atlantic Athletic Conference,exact_norm
+190044,Liberty League,exact_norm
+190099,Patriot League,exact_norm
+190150,Ivy League,exact_norm
+190415,Ivy League,exact_norm
+190716,East Coast Conference,exact_norm
+190725,East Coast Conference,exact_norm
+190761,Central Atlantic Collegiate Conference,exact_norm
+190983,Empire 8,exact_norm
+191241,Atlantic 10 Conference,exact_norm
+191515,New England Small College Athletic Conference,exact_norm
+191533,Empire 8,exact_norm
+191621,Allegheny Mountain Collegiate Conference,exact_norm
+191649,Coastal Athletic Association,exact_norm
+191676,Empire 8,exact_norm
+191931,Metro Atlantic Athletic Conference,exact_norm
+191968,Liberty League,exact_norm
+192192,Empire 8,exact_norm
+192448,NEC,exact_norm
+192703,Metro Atlantic Athletic Conference,exact_norm
+192749,Skyline Conference,exact_norm
+192819,Metro Atlantic Athletic Conference,exact_norm
+193016,East Coast Conference,exact_norm
+193292,East Coast Conference,exact_norm
+193353,Skyline Conference,exact_norm
+193399,Skyline Conference,exact_norm
+193584,Empire 8,exact_norm
+193900,University Athletic Association,exact_norm
+193973,Metro Atlantic Athletic Conference,exact_norm
+194310,Northeast-10 Conference,exact_norm
+194824,Liberty League,exact_norm
+194958,East Coast Conference,exact_norm
+195003,Liberty League,exact_norm
+195030,University Athletic Association,exact_norm
+195128,Empire 8,exact_norm
+195164,Atlantic 10 Conference,exact_norm
+195216,Liberty League,exact_norm
+195243,East Coast Conference,exact_norm
+195304,Skyline Conference,exact_norm
+195474,Metro Atlantic Athletic Conference,override
+195526,Liberty League,exact_norm
+195544,Atlantic 10 Conference,exact_norm
+195720,Empire 8,exact_norm
+195809,Big East Conference,exact_norm
+196042,Skyline Conference,exact_norm
+196079,America East Conference,override
+196149,State University of New York Athletic Conference,exact_norm
+196176,State University of New York Athletic Conference,exact_norm
+196194,State University of New York Athletic Conference,exact_norm
+196246,State University of New York Athletic Conference,exact_norm
+196413,Atlantic Coast Conference,exact_norm
+196866,Liberty League,exact_norm
+197027,Skyline Conference,exact_norm
+197045,Empire 8,exact_norm
+197133,Liberty League,exact_norm
+197197,NEC,exact_norm
+197708,Skyline Conference,exact_norm
+197869,Sun Belt Conference,exact_norm
+197911,Conference Carolinas,exact_norm
+197984,Conference Carolinas,exact_norm
+198066,USA South Athletic Conference,exact_norm
+198136,Coastal Athletic Association,exact_norm
+198215,South Atlantic Conference,exact_norm
+198303,Conference Carolinas,exact_norm
+198385,Atlantic 10 Conference,exact_norm
+198419,Atlantic Coast Conference,exact_norm
+198464,American Conference,exact_norm
+198507,Central Intercollegiate Athletic Association,exact_norm
+198516,Coastal Athletic Association,exact_norm
+198543,Central Intercollegiate Athletic Association,exact_norm
+198561,Big South Conference,exact_norm
+198598,USA South Athletic Conference,exact_norm
+198613,Old Dominion Athletic Conference,exact_norm
+198695,Big South Conference,exact_norm
+198756,Central Intercollegiate Athletic Association,exact_norm
+198808,Conference Carolinas,exact_norm
+198835,South Atlantic Conference,exact_norm
+198862,Central Intercollegiate Athletic Association,exact_norm
+198899,South Atlantic Conference,exact_norm
+198969,USA South Athletic Conference,exact_norm
+199032,Appalachian Athletic Conference,exact_norm
+199069,Conference Carolinas,exact_norm
+199102,Coastal Athletic Association,override
+199111,Big South Conference,exact_norm
+199120,Atlantic Coast Conference,exact_norm
+199139,American Conference,exact_norm
+199148,Southern Conference,exact_norm
+199157,Mid-Eastern Athletic Conference,exact_norm
+199193,Atlantic Coast Conference,override
+199209,USA South Athletic Conference,exact_norm
+199218,Coastal Athletic Association,exact_norm
+199272,USA South Athletic Conference,exact_norm
+199281,Conference Carolinas,exact_norm
+199306,USA South Athletic Conference,exact_norm
+199412,Atlantic Sun Conference,exact_norm
+199643,Central Intercollegiate Athletic Association,exact_norm
+199847,Atlantic Coast Conference,exact_norm
+199865,Coast to Coast Athletic Conference,exact_norm
+199962,South Atlantic Conference,exact_norm
+199999,Central Intercollegiate Athletic Association,exact_norm
+200004,Southern Conference,exact_norm
+200022,Frontier Conference,exact_norm
+200059,Frontier Conference,exact_norm
+200217,Northern Sun Intercollegiate Conference,exact_norm
+200226,Frontier Conference,exact_norm
+200253,Northern Sun Intercollegiate Conference,exact_norm
+200280,Summit League,exact_norm
+200332,Summit League,override
+200572,Frontier Conference,exact_norm
+200800,Mid-American Conference,exact_norm
+201104,Great Midwest Athletic Conference,exact_norm
+201195,Ohio Athletic Conference,exact_norm
+201371,Heartland Collegiate Athletic Conference,exact_norm
+201441,Mid-American Conference,exact_norm
+201548,Ohio Athletic Conference,exact_norm
+201645,University Athletic Association,exact_norm
+201654,Great Midwest Athletic Conference,exact_norm
+201690,Southern Intercollegiate Athletic Conference,exact_norm
+201885,Big 12 Conference,exact_norm
+202134,Horizon League,exact_norm
+202480,Atlantic 10 Conference,exact_norm
+202514,Wolverine–Hoosier Athletic Conference,exact_norm
+202523,North Coast Athletic Conference,exact_norm
+202763,Great Midwest Athletic Conference,exact_norm
+203085,Ohio Athletic Conference,exact_norm
+203128,Presidents' Athletic Conference,exact_norm
+203368,North Coast Athletic Conference,exact_norm
+203517,Mid-American Conference,override
+203535,North Coast Athletic Conference,exact_norm
+203580,Great Midwest Athletic Conference,exact_norm
+203757,Wolverine–Hoosier Athletic Conference,exact_norm
+203775,Great Midwest Athletic Conference,exact_norm
+203845,Ohio Athletic Conference,exact_norm
+204024,Mid-American Conference,exact_norm
+204185,Ohio Athletic Conference,exact_norm
+204194,Crossroads League,exact_norm
+204200,Heartland Collegiate Athletic Conference,exact_norm
+204264,Ohio Athletic Conference,exact_norm
+204501,North Coast Athletic Conference,exact_norm
+204617,Great Midwest Athletic Conference,exact_norm
+204635,Ohio Athletic Conference,exact_norm
+204796,Big Ten Conference,override
+204857,Mid-American Conference,exact_norm
+204909,North Coast Athletic Conference,exact_norm
+204936,Ohio Athletic Conference,exact_norm
+205203,River States Conference,exact_norm
+205443,River States Conference,exact_norm
+205957,Presidents' Athletic Conference,exact_norm
+206048,Great Midwest Athletic Conference,exact_norm
+206084,Mid-American Conference,exact_norm
+206349,Great Midwest Athletic Conference,exact_norm
+206437,Great Midwest Athletic Conference,exact_norm
+206491,HBCU Athletic Conference,exact_norm
+206507,Ohio Athletic Conference,exact_norm
+206525,North Coast Athletic Conference,exact_norm
+206589,North Coast Athletic Conference,exact_norm
+206604,Horizon League,exact_norm
+206622,Big East Conference,exact_norm
+206695,Horizon League,exact_norm
+206835,Kansas Collegiate Athletic Conference,exact_norm
+206862,Great American Conference,exact_norm
+206914,Lone Star Conference,exact_norm
+206941,Mid-America Intercollegiate Athletics Association,exact_norm
+207041,Great American Conference,exact_norm
+207209,Sooner Athletic Conference,exact_norm
+207263,Mid-America Intercollegiate Athletics Association,exact_norm
+207306,Great American Conference,exact_norm
+207324,Lone Star Conference,exact_norm
+207351,Sooner Athletic Conference,exact_norm
+207388,Big 12 Conference,override
+207403,Great American Conference,exact_norm
+207458,Sooner Athletic Conference,exact_norm
+207500,Southeastern Conference,exact_norm
+207582,Summit League,exact_norm
+207661,Mid-America Intercollegiate Athletics Association,exact_norm
+207722,Sooner Athletic Conference,exact_norm
+207847,Great American Conference,exact_norm
+207856,Sooner Athletic Conference,exact_norm
+207865,Great American Conference,exact_norm
+207971,American Conference,exact_norm
+208646,Cascade Collegiate Conference,exact_norm
+208822,Northwest Conference,exact_norm
+209056,Northwest Conference,exact_norm
+209065,Northwest Conference,exact_norm
+209409,Cascade Collegiate Conference,exact_norm
+209542,Pac-12 Conference,exact_norm
+209551,Big Ten Conference,exact_norm
+209612,Northwest Conference,exact_norm
+209807,Big Sky Conference,exact_norm
+209825,West Coast Conference,exact_norm
+210146,Cascade Collegiate Conference,exact_norm
+210304,Cascade Collegiate Conference,exact_norm
+210331,Cascade Collegiate Conference,exact_norm
+210401,Northwest Conference,exact_norm
+210429,Great Northwest Athletic Conference,exact_norm
+210571,MAC Commonwealth,exact_norm
+210669,Presidents' Athletic Conference,exact_norm
+210739,MAC Freedom,exact_norm
+210775,MAC Commonwealth,exact_norm
+211088,MAC Freedom,exact_norm
+211291,Patriot League,exact_norm
+211431,Allegheny Mountain Collegiate Conference,exact_norm
+211440,University Athletic Association,exact_norm
+211468,United East Conference,exact_norm
+211556,Presidents' Athletic Conference,exact_norm
+211583,Central Atlantic Collegiate Conference,exact_norm
+211981,MAC Freedom,exact_norm
+212009,Centennial Conference,exact_norm
+212054,Coastal Athletic Association,exact_norm
+212106,Atlantic 10 Conference,override
+212133,MAC Commonwealth,exact_norm
+212197,Landmark Conference,exact_norm
+212577,Centennial Conference,exact_norm
+212601,Pennsylvania State Athletic Conference,exact_norm
+212656,Presidents' Athletic Conference,exact_norm
+212674,Centennial Conference,exact_norm
+212832,Atlantic East Conference,exact_norm
+212911,Centennial Conference,exact_norm
+212984,Central Atlantic Collegiate Conference,exact_norm
+213011,Atlantic East Conference,exact_norm
+213020,Pennsylvania State Athletic Conference,exact_norm
+213251,Landmark Conference,exact_norm
+213303,United East Conference,exact_norm
+213321,MAC Freedom,exact_norm
+213358,Allegheny Mountain Collegiate Conference,exact_norm
+213367,Atlantic 10 Conference,exact_norm
+213385,Patriot League,exact_norm
+213400,United East Conference,exact_norm
+213507,MAC Freedom,exact_norm
+213543,Patriot League,exact_norm
+213668,Landmark Conference,exact_norm
+213826,Atlantic East Conference,exact_norm
+213996,MAC Commonwealth,exact_norm
+214069,MAC Freedom,exact_norm
+214157,Landmark Conference,exact_norm
+214166,Allegheny Mountain Collegiate Conference,exact_norm
+214175,Centennial Conference,exact_norm
+214272,Atlantic East Conference,exact_norm
+214777,Big Ten Conference,exact_norm
+215062,Ivy League,exact_norm
+215266,Allegheny Mountain Collegiate Conference,exact_norm
+215275,Allegheny Mountain Collegiate Conference,exact_norm
+215284,Pennsylvania State Athletic Conference,exact_norm
+215293,Atlantic Coast Conference,exact_norm
+215655,Horizon League,exact_norm
+215691,United East Conference,exact_norm
+215743,NEC,exact_norm
+215798,Presidents' Athletic Conference,exact_norm
+215929,Landmark Conference,exact_norm
+215947,Pennsylvania State Athletic Conference,exact_norm
+216278,Landmark Conference,exact_norm
+216287,Centennial Conference,exact_norm
+216339,American Conference,exact_norm
+216357,Presidents' Athletic Conference,exact_norm
+216366,Central Atlantic Collegiate Conference,exact_norm
+216524,Centennial Conference,exact_norm
+216542,United East Conference,exact_norm
+216597,Big East Conference,exact_norm
+216667,Presidents' Athletic Conference,exact_norm
+216694,Presidents' Athletic Conference,exact_norm
+216852,MAC Commonwealth,exact_norm
+216931,Landmark Conference,exact_norm
+217013,United East Conference,exact_norm
+217059,MAC Commonwealth,exact_norm
+217156,Ivy League,exact_norm
+217165,America East Conference,exact_norm
+217402,Big East Conference,exact_norm
+217420,Little East Conference,exact_norm
+217484,Atlantic 10 Conference,exact_norm
+217518,Conference of New England,exact_norm
+217536,New England Women's and Men's Athletic Conference,exact_norm
+217624,Southern Intercollegiate Athletic Conference,exact_norm
+217688,Big South Conference,exact_norm
+217721,Southern Intercollegiate Athletic Conference,exact_norm
+217776,Conference Carolinas,exact_norm
+217819,Coastal Athletic Association,exact_norm
+217864,Southern Conference,exact_norm
+217873,Central Intercollegiate Athletic Association,exact_norm
+217882,Atlantic Coast Conference,exact_norm
+217907,South Atlantic Conference,exact_norm
+217925,Appalachian Athletic Conference,exact_norm
+217961,Conference Carolinas,exact_norm
+217998,Conference Carolinas,exact_norm
+218061,Conference Carolinas,exact_norm
+218070,Southern Conference,exact_norm
+218229,Peach Belt Conference,exact_norm
+218399,Continental Athletic Conference,exact_norm
+218414,South Atlantic Conference,exact_norm
+218441,Conference Carolinas,exact_norm
+218539,Big South Conference,exact_norm
+218645,Peach Belt Conference,exact_norm
+218654,Peach Belt Conference,exact_norm
+218663,Southeastern Conference,exact_norm
+218724,Sun Belt Conference,exact_norm
+218733,Mid-Eastern Athletic Conference,exact_norm
+218742,Big South Conference,exact_norm
+218821,Appalachian Athletic Conference,exact_norm
+218919,HBCU Athletic Conference,exact_norm
+218964,Big South Conference,exact_norm
+218973,Southern Conference,exact_norm
+219000,Northern Sun Intercollegiate Conference,exact_norm
+219046,Rocky Mountain Athletic Conference,exact_norm
+219082,Frontier Conference,exact_norm
+219091,Great Plains Athletic Conference,exact_norm
+219198,Great Plains Athletic Conference,exact_norm
+219259,Northern Sun Intercollegiate Conference,exact_norm
+219347,Rocky Mountain Athletic Conference,exact_norm
+219356,Summit League,exact_norm
+219383,Northern Sun Intercollegiate Conference,exact_norm
+219471,Summit League,exact_norm
+219602,Atlantic Sun Conference,exact_norm
+219709,Missouri Valley Conference,exact_norm
+219806,South Atlantic Conference,exact_norm
+219833,Gulf South Conference,exact_norm
+219949,Mid-South Conference,exact_norm
+219976,Atlantic Sun Conference,exact_norm
+220075,Southern Conference,exact_norm
+220181,HBCU Athletic Conference,exact_norm
+220215,Mid-South Conference,exact_norm
+220473,Appalachian Athletic Conference,exact_norm
+220516,Conference Carolinas,exact_norm
+220598,Southern Intercollegiate Athletic Conference,exact_norm
+220604,Southern Intercollegiate Athletic Conference,fuzzy_0.95+
+220613,Gulf South Conference,exact_norm
+220631,South Atlantic Conference,exact_norm
+220710,Collegiate Conference of the South,exact_norm
+220862,American Conference,exact_norm
+220978,Conference USA,exact_norm
+221351,Southern Athletic Association,exact_norm
+221519,Southern Athletic Association,exact_norm
+221731,Appalachian Athletic Conference,exact_norm
+221740,Southern Conference,exact_norm
+221759,Southeastern Conference,exact_norm
+221768,Ohio Valley Conference,exact_norm
+221838,Ohio Valley Conference,exact_norm
+221847,Ohio Valley Conference,exact_norm
+221892,Gulf South Conference,exact_norm
+221953,South Atlantic Conference,exact_norm
+221971,Gulf South Conference,exact_norm
+221999,Southeastern Conference,exact_norm
+222178,Western Athletic Conference,exact_norm
+222831,Lone Star Conference,exact_norm
+222983,Southern Collegiate Athletic Conference,exact_norm
+223232,Big 12 Conference,exact_norm
+224004,Southern Collegiate Athletic Conference,exact_norm
+224147,Southland Conference,exact_norm
+224226,Lone Star Conference,exact_norm
+224323,Southern Collegiate Athletic Conference,exact_norm
+224527,American Southwest Conference,exact_norm
+224545,Red River Athletic Conference,exact_norm
+224554,Southland Conference,exact_norm
+225247,American Southwest Conference,exact_norm
+225399,Southland Conference,exact_norm
+225511,Big 12 Conference,exact_norm
+225548,American Southwest Conference,exact_norm
+225575,HBCU Athletic Conference,exact_norm
+225627,Southland Conference,exact_norm
+225885,Red River Athletic Conference,exact_norm
+226091,Southland Conference,exact_norm
+226152,Lone Star Conference,exact_norm
+226231,Southern Collegiate Athletic Conference,exact_norm
+226383,Lone Star Conference,exact_norm
+226471,American Southwest Conference,exact_norm
+226587,Southern Collegiate Athletic Conference,exact_norm
+226833,Lone Star Conference,exact_norm
+227216,American Conference,exact_norm
+227331,Red River Athletic Conference,exact_norm
+227368,Southland Conference,exact_norm
+227429,HBCU Athletic Conference,exact_norm
+227526,Southwestern Athletic Conference,exact_norm
+227845,Lone Star Conference,exact_norm
+227881,Conference USA,exact_norm
+228042,Southern Collegiate Athletic Conference,exact_norm
+228149,Lone Star Conference,exact_norm
+228246,Atlantic Coast Conference,exact_norm
+228325,Sooner Athletic Conference,exact_norm
+228343,Southern Athletic Association,exact_norm
+228431,Southland Conference,exact_norm
+228459,Sun Belt Conference,exact_norm
+228529,Western Athletic Conference,exact_norm
+228705,Lone Star Conference,exact_norm
+228769,Western Athletic Conference,exact_norm
+228778,Southeastern Conference,exact_norm
+228796,Conference USA,exact_norm
+228802,Lone Star Conference,exact_norm
+228875,Big 12 Conference,exact_norm
+228884,Red River Athletic Conference,exact_norm
+228981,Southern Collegiate Athletic Conference,exact_norm
+229018,Lone Star Conference,exact_norm
+229027,American Conference,exact_norm
+229063,Southwestern Athletic Conference,exact_norm
+229115,Big 12 Conference,exact_norm
+229160,Sooner Athletic Conference,exact_norm
+229179,Lone Star Conference,exact_norm
+229267,Southern Athletic Association,exact_norm
+229780,Sooner Athletic Conference,exact_norm
+229814,Lone Star Conference,exact_norm
+229887,HBCU Athletic Conference,exact_norm
+230038,Big 12 Conference,exact_norm
+230171,Western Athletic Conference,exact_norm
+230603,Western Athletic Conference,exact_norm
+230728,Mountain West Conference,exact_norm
+230737,Western Athletic Conference,exact_norm
+230764,Big 12 Conference,exact_norm
+230782,Big Sky Conference,exact_norm
+230807,Rocky Mountain Athletic Conference,exact_norm
+230959,New England Small College Athletic Conference,exact_norm
+230995,Great Northeast Athletic Conference,exact_norm
+231059,Northeast-10 Conference,exact_norm
+231420,Old Dominion Athletic Conference,exact_norm
+231554,Appalachian Athletic Conference,exact_norm
+231581,Old Dominion Athletic Conference,exact_norm
+231651,Coast to Coast Athletic Conference,exact_norm
+231712,Coast to Coast Athletic Conference,exact_norm
+232025,South Atlantic Conference,exact_norm
+232043,Old Dominion Athletic Conference,exact_norm
+232186,Atlantic 10 Conference,exact_norm
+232265,Coastal Athletic Association,exact_norm
+232423,Sun Belt Conference,exact_norm
+232557,Conference USA,exact_norm
+232566,Big South Conference,exact_norm
+232609,Old Dominion Athletic Conference,exact_norm
+232672,USA South Athletic Conference,exact_norm
+232681,Coast to Coast Athletic Conference,exact_norm
+232706,Atlantic East Conference,exact_norm
+232937,Mid-Eastern Athletic Conference,exact_norm
+232982,Sun Belt Conference,exact_norm
+233277,Big South Conference,exact_norm
+233295,Old Dominion Athletic Conference,exact_norm
+233301,Old Dominion Athletic Conference,exact_norm
+233374,Atlantic 10 Conference,exact_norm
+233426,Old Dominion Athletic Conference,exact_norm
+233541,Old Dominion Athletic Conference,exact_norm
+233611,USA South Athletic Conference,exact_norm
+233897,South Atlantic Conference,exact_norm
+233921,Atlantic Coast Conference,exact_norm
+234030,Atlantic 10 Conference,exact_norm
+234076,Atlantic Coast Conference,exact_norm
+234085,Southern Conference,exact_norm
+234155,Central Intercollegiate Athletic Association,exact_norm
+234164,Central Intercollegiate Athletic Association,exact_norm
+234173,Old Dominion Athletic Conference,exact_norm
+234207,Old Dominion Athletic Conference,exact_norm
+234827,Great Northwest Athletic Conference,exact_norm
+235097,Big Sky Conference,exact_norm
+235167,Cascade Collegiate Conference,exact_norm
+235316,West Coast Conference,exact_norm
+236133,Cascade Collegiate Conference,exact_norm
+236230,Northwest Conference,exact_norm
+236328,Northwest Conference,exact_norm
+236452,Great Northwest Athletic Conference,exact_norm
+236577,Great Northwest Athletic Conference,exact_norm
+236595,West Coast Conference,exact_norm
+236896,Cascade Collegiate Conference,exact_norm
+236939,Pac-12 Conference,exact_norm
+236948,Big Ten Conference,exact_norm
+237011,Great Northwest Athletic Conference,exact_norm
+237057,Northwest Conference,exact_norm
+237066,Northwest Conference,exact_norm
+237215,Central Intercollegiate Athletic Association,exact_norm
+237312,Mountain East Conference,exact_norm
+237330,Mountain East Conference,exact_norm
+237358,Mountain East Conference,exact_norm
+237367,Mountain East Conference,exact_norm
+237385,Mountain East Conference,exact_norm
+237525,Sun Belt Conference,exact_norm
+237783,Independent,exact_norm
+237792,Pennsylvania State Athletic Conference,exact_norm
+237899,Mountain East Conference,exact_norm
+237932,Mountain East Conference,exact_norm
+237969,Mountain East Conference,exact_norm
+238032,Big 12 Conference,exact_norm
+238078,Mountain East Conference,exact_norm
+238193,Northern Athletics Collegiate Conference,exact_norm
+238333,Midwest Conference,exact_norm
+238458,College Conference of Illinois and Wisconsin,exact_norm
+238476,College Conference of Illinois and Wisconsin,exact_norm
+238616,Northern Athletics Collegiate Conference,exact_norm
+238980,Northern Athletics Collegiate Conference,exact_norm
+239017,Midwest Conference,exact_norm
+239071,Independent,exact_norm
+239105,Big East Conference,exact_norm
+239318,Northern Athletics Collegiate Conference,exact_norm
+239628,Midwest Conference,exact_norm
+239716,Northern Athletics Collegiate Conference,exact_norm
+240107,Chicagoland Collegiate Athletic Conference,exact_norm
+240189,Wisconsin Intercollegiate Athletic Conference,exact_norm
+240268,Wisconsin Intercollegiate Athletic Conference,exact_norm
+240277,Horizon League,exact_norm
+240329,Wisconsin Intercollegiate Athletic Conference,exact_norm
+240338,Northern Athletics Collegiate Conference,exact_norm
+240365,Wisconsin Intercollegiate Athletic Conference,exact_norm
+240374,Great Lakes Intercollegiate Athletic Conference,exact_norm
+240417,Wisconsin Intercollegiate Athletic Conference,exact_norm
+240426,Upper Midwest Athletic Conference,exact_norm
+240444,Big Ten Conference,exact_norm
+240453,Horizon League,exact_norm
+240462,Wisconsin Intercollegiate Athletic Conference,exact_norm
+240471,Wisconsin Intercollegiate Athletic Conference,exact_norm
+240480,Wisconsin Intercollegiate Athletic Conference,exact_norm
+240727,Mountain West Conference,exact_norm
+243133,Independent,fuzzy_0.95+
+243197,Independent,fuzzy_0.95+
+243221,Independent,fuzzy_0.95+
+243665,HBCU Athletic Conference,exact_norm
+243744,Atlantic Coast Conference,override
+243780,Big Ten Conference,exact_norm
+245953,Sooner Athletic Conference,exact_norm
+262129,Sun Conference,exact_norm
+366252,United East Conference,exact_norm
+366711,California Collegiate Athletic Association,exact_norm
+399911,Great Southwest Athletic Conference,exact_norm
+408844,Continental Athletic Conference,exact_norm
+409698,California Collegiate Athletic Association,exact_norm
+433660,Atlantic Sun Conference,exact_norm
+445708,Coast to Coast Athletic Conference,exact_norm
+446048,Sun Conference,exact_norm
+447689,Continental Athletic Conference,exact_norm
+459949,Red River Athletic Conference,exact_norm
+461795,Red River Athletic Conference,exact_norm
+482149,Peach Belt Conference,exact_norm
+482680,Peach Belt Conference,exact_norm
+484905,Red River Athletic Conference,exact_norm
+486840,Conference USA,exact_norm
+486901,Appalachian Athletic Conference,exact_norm
+487524,North Atlantic Conference,exact_norm
+489937,Continental Athletic Conference,exact_norm
+490133,California Pacific Conference,exact_norm
+490805,Great Lakes Intercollegiate Athletic Conference,exact_norm
+800001,Great Northwest Athletic Conference,exact_norm

@@ -1,0 +1,30 @@
+# Question / expected-source pairs. The eval harness asserts the agent's
+# response cites the right `variables.source` for each question.
+#
+# Add real questions you've asked the peer-schools tool, with the metric
+# you expected to see cited.
+
+cases:
+  - question: "What is Holy Cross's 6-year graduation rate?"
+    expected_metrics: [grad_rate_6yr]
+    expected_source: ipeds
+
+  - question: "How many applications did Lafayette College receive in 2024?"
+    expected_metrics: [applications_total]
+    expected_source: ipeds
+
+  - question: "What's the discount rate at Holy Cross?"
+    expected_metrics: [inst_discount_rate]
+    expected_source: ipeds_derived
+
+  - question: "What's Trinity College's US News ranking?"
+    expected_metrics: [usnews_rank]
+    expected_source: us_news
+
+  - question: "How does Holy Cross compare on student-to-faculty ratio?"
+    expected_metrics: [student_faculty_ratio]
+    expected_source: ipeds
+
+  - question: "What athletic conference is Holy Cross in?"
+    expected_metrics: [athletics_conference]
+    expected_source: scraped_eada_conferences
