@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>College Facts Agent</title>
+<style>
+  :root { --bg:#0f1419; --panel:#1a2029; --me:#1f6feb; --bot:#222b36; --muted:#8b97a7; --line:#2a3340; }
+  * { box-sizing: border-box; }
+  body { margin:0; height:100vh; display:flex; flex-direction:column;
+         font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+         background:var(--bg); color:#e6edf3; }
+  header { padding:12px 16px; border-bottom:1px solid var(--line); display:flex; gap:12px; align-items:center; }
+  header h1 { font-size:16px; margin:0; font-weight:600; }
+  header .spacer { flex:1; }
+  header input { background:var(--panel); border:1px solid var(--line); color:#e6edf3;
+                 border-radius:6px; padding:6px 8px; font-size:13px; width:200px; }
+  #log { flex:1; overflow-y:auto; padding:16px; display:flex; flex-direction:column; gap:12px; }
+  .row { display:flex; }
+  .row.me { justify-content:flex-end; }
+  .bubble { max-width:78%; padding:10px 14px; border-radius:14px; white-space:pre-wrap; word-wrap:break-word; }
+  .me .bubble { background:var(--me); border-bottom-right-radius:4px; }
+  .bot .bubble { background:var(--bot); border-bottom-left-radius:4px; }
+  .tools { font-size:12px; color:var(--muted); margin-top:6px; }
+  .tools code { background:#0d1117; padding:1px 5px; border-radius:4px; }
+  form { display:flex; gap:8px; padding:12px 16px; border-top:1px solid var(--line); }
+  textarea { flex:1; resize:none; background:var(--panel); border:1px solid var(--line);
+             color:#e6edf3; border-radius:8px; padding:10px 12px; font:inherit; height:44px; }
+  button { background:var(--me); color:#fff; border:0; border-radius:8px; padding:0 18px;
+           font-weight:600; cursor:pointer; }
+  button:disabled { opacity:.5; cursor:default; }
+  .hint { color:var(--muted); font-size:13px; padding:0 16px 8px; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>College Facts Agent</h1>
+    <span class="spacer"></span>
+    <input id="token" type="password" placeholder="API token" autocomplete="off">
+  </header>
+  <div id="log"></div>
+  <div class="hint">Try: "What's Holy Cross's acceptance rate and US News ranking?"</div>
+  <form id="form">
+    <textarea id="msg" placeholder="Ask about a U.S. college…" autofocus></textarea>
+    <button id="send" type="submit">Send</button>
+  </form>
+
+<script>
+  const log = document.getElementById('log');
+  const form = document.getElementById('form');
+  const msgEl = document.getElementById('msg');
+  const sendBtn = document.getElementById('send');
+  const tokenEl = document.getElementById('token');
+
+  // Persist the bearer token locally — never in the server code.
+  tokenEl.value = localStorage.getItem('cfa_token') || '';
+  tokenEl.addEventListener('change', () => localStorage.setItem('cfa_token', tokenEl.value.trim()));
+
+  const esc = s => s.replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+  // minimal markdown: **bold** and line breaks (after escaping, so it's XSS-safe)
+  const fmt = s => esc(s).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+
+  function bubble(role, html) {
+    const row = document.createElement('div'); row.className = 'row ' + role;
+    const b = document.createElement('div'); b.className = 'bubble'; b.innerHTML = html;
+    row.appendChild(b); log.appendChild(row); log.scrollTop = log.scrollHeight;
+    return b;
+  }
+
+  async function send(text) {
+    bubble('me', esc(text));
+    const pending = bubble('bot', '<span style="opacity:.6">…</span>');
+    sendBtn.disabled = true;
+    try {
+      const r = await fetch('/chat', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json',
+                   'authorization': 'Bearer ' + (tokenEl.value.trim()) },
+        body: JSON.stringify({ message: text })
+      });
+      if (!r.ok) {
+        pending.innerHTML = r.status === 401
+          ? '<em>Unauthorized — set your API token in the top-right.</em>'
+          : '<em>Error ' + r.status + '</em>';
+        return;
+      }
+      const data = await r.json();
+      let html = fmt(data.reply || '(no reply)');
+      if (data.trace && data.trace.length) {
+        const used = [...new Set(data.trace.map(t => t.tool))];
+        html += '<div class="tools">tools: ' + used.map(t => '<code>'+t+'</code>').join(' ') + '</div>';
+      }
+      pending.innerHTML = html;
+    } catch (e) {
+      pending.innerHTML = '<em>Network error: ' + esc(String(e)) + '</em>';
+    } finally {
+      sendBtn.disabled = false;
+      msgEl.focus();
+    }
+  }
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const text = msgEl.value.trim();
+    if (!text) return;
+    msgEl.value = '';
+    send(text);
+  });
+  // Enter to send, Shift+Enter for newline
+  msgEl.addEventListener('keydown', e => {
+    if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); form.requestSubmit(); }
+  });
+</script>
+</body>
+</html>

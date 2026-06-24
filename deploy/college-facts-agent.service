@@ -1,0 +1,25 @@
+[Unit]
+Description=College Facts Agent (FastAPI + LiteLLM over the local catalog)
+# Start after the network and Postgres are up; the agent queries the DB.
+After=network-online.target postgresql.service
+Wants=network-online.target postgresql.service
+
+[Service]
+Type=simple
+User=cwenz
+WorkingDirectory=/home/cwenz/Code/college-facts-agent
+
+# Secrets + config come from .env (gitignored, never committed). systemd reads
+# simple KEY=value lines directly. PYTHONPATH lets uvicorn import app/config/tools.
+EnvironmentFile=/home/cwenz/Code/college-facts-agent/.env
+Environment=PYTHONPATH=/home/cwenz/Code/college-facts-agent/agent
+
+# Production launch: no --reload. Bound to 0.0.0.0 for LAN access; change to
+# 127.0.0.1 if you front it with a reverse proxy or only use an SSH tunnel.
+ExecStart=/home/cwenz/Code/college-facts-agent/.venv/bin/python -m uvicorn app:app --host 0.0.0.0 --port 8000
+
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
