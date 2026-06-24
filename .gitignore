@@ -19,3 +19,7 @@ __pycache__/
 
 # build artifacts written into data/ (e.g. Forbes name-match audit)
 data/*_unmatched.csv
+
+# editor swap files
+*.swp
+*.swo
