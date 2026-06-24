@@ -16,3 +16,6 @@ __pycache__/
 .venv/
 .ipynb_checkpoints/
 .DS_Store
+
+# build artifacts written into data/ (e.g. Forbes name-match audit)
+data/*_unmatched.csv
